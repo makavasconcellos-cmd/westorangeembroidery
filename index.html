@@ -374,6 +374,8 @@
             justify-content: center;
             color: var(--gray-400);
             font-size: 0.9rem;
+            text-align: center;
+            padding: 20px;
         }
 
         /* ── PROCESS ── */
@@ -388,7 +390,6 @@
         .step {
             text-align: center;
             padding: 32px 20px;
-            position: relative;
         }
         .step-number {
             width: 48px; height: 48px;
@@ -466,9 +467,7 @@
             grid-template-columns: 1fr 1fr;
             gap: 16px;
         }
-        .form-group {
-            margin-bottom: 16px;
-        }
+        .form-group { margin-bottom: 16px; }
         .form-group.full { grid-column: 1 / -1; }
         .form-group label {
             display: block;
@@ -520,10 +519,7 @@
             color: rgba(255,255,255,0.6);
             padding: 60px 24px 30px;
         }
-        .footer-inner {
-            max-width: 1200px;
-            margin: 0 auto;
-        }
+        .footer-inner { max-width: 1200px; margin: 0 auto; }
         .footer-top {
             display: flex;
             justify-content: space-between;
@@ -616,7 +612,7 @@
 <!-- HERO -->
 <section class="hero">
     <div class="hero-content">
-        <div class="hero-badge">Winter Garden, FL — Serving the Greater Orlando Area</div>
+        <div class="hero-badge">Winter Garden, FL &mdash; Serving the Greater Orlando Area</div>
         <h1>Bulk Custom <span class="highlight">Embroidery</span> for Businesses &amp; Organizations</h1>
         <p>Professional embroidery for corporate apparel, team uniforms, and promotional products. Local production, fast turnaround, quality you can see and feel.</p>
         <div class="hero-buttons">
@@ -650,45 +646,45 @@
         </div>
         <div class="services-grid">
             <div class="service-card">
-                <img src="https://images.unsplash.com/photo-1594938298603-c8148c4dae35?w=600&h=400&fit=crop" alt="Corporate Apparel" class="service-img">
+                <img src="images/ocean-polo.jpg" alt="Corporate polo with embroidered logo" class="service-img">
                 <div class="service-body">
                     <h3>Corporate Apparel</h3>
                     <p>Branded polos, button-downs, and professional wear for your entire team. Consistent quality across every piece, every order.</p>
                 </div>
             </div>
             <div class="service-card">
-                <img src="https://images.unsplash.com/photo-1556306535-0f09a537f0a3?w=600&h=400&fit=crop" alt="Custom Headwear" class="service-img">
+                <img src="images/teton-adventure-hat.jpg" alt="Custom embroidered trucker hat" class="service-img">
                 <div class="service-body">
                     <h3>Custom Headwear</h3>
                     <p>Trucker hats, fitted caps, beanies, and more. Bulk orders for events, teams, retail, and corporate giveaways.</p>
                 </div>
             </div>
             <div class="service-card">
-                <img src="https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?w=600&h=400&fit=crop" alt="Team & Sports Gear" class="service-img">
-                <div class="service-body">
-                    <h3>Team &amp; Sports Gear</h3>
-                    <p>Uniforms, warmups, and team apparel for youth leagues, rec teams, and corporate sports programs.</p>
-                </div>
-            </div>
-            <div class="service-card">
-                <img src="https://images.unsplash.com/photo-1591085686350-798c0f9faa7f?w=600&h=400&fit=crop" alt="Outerwear & Jackets" class="service-img">
+                <img src="images/blue-jacket-embroidered.jpg" alt="Embroidered team jacket" class="service-img">
                 <div class="service-body">
                     <h3>Outerwear &amp; Jackets</h3>
                     <p>Embroidered jackets, hoodies, quarter-zips, and fleece. Professional branding on premium outerwear.</p>
                 </div>
             </div>
             <div class="service-card">
-                <img src="https://images.unsplash.com/photo-1618354691373-d851c5c3a990?w=600&h=400&fit=crop" alt="Custom Patches" class="service-img">
+                <img src="images/anchorwatch-crewneck.jpg" alt="Embroidered crewneck sweatshirt" class="service-img">
                 <div class="service-body">
-                    <h3>Custom Patches</h3>
-                    <p>Embroidered patches for uniforms, organizations, and branding. Iron-on or sew-on, any shape or size.</p>
+                    <h3>Sweatshirts &amp; Hoodies</h3>
+                    <p>Crewnecks, hoodies, and zip-ups with clean embroidered branding. Perfect for teams, events, and company gear.</p>
                 </div>
             </div>
             <div class="service-card">
-                <img src="https://images.unsplash.com/photo-1558618666-fcd25c85f82e?w=600&h=400&fit=crop" alt="Logo Digitizing" class="service-img">
+                <img src="images/embroidery-detail-hoop.jpg" alt="Detailed embroidery in hoop" class="service-img">
                 <div class="service-body">
                     <h3>Logo Digitizing</h3>
                     <p>We convert your logo into an embroidery-ready file. Clean, precise digitizing that translates your brand into thread.</p>
+                </div>
+            </div>
+            <div class="service-card">
+                <img src="images/bulk-order-packaged.jpg" alt="Bulk order packaged for delivery" class="service-img">
+                <div class="service-body">
+                    <h3>Bulk Orders</h3>
+                    <p>Built for volume. From 20 to 200+ pieces, we handle large orders with consistent quality and on-time delivery.</p>
                 </div>
             </div>
         </div>
@@ -701,65 +697,91 @@
         <div class="section-header">
             <div class="section-label">Our Work</div>
             <h2>Built for Businesses Like Yours</h2>
-            <p>A selection of recent projects for local companies, teams, and organizations.</p>
+            <p>A selection of recent projects for companies, teams, and organizations.</p>
         </div>
         <div class="portfolio-grid">
-            <!-- Replace these src attributes with your actual photo filenames -->
-            <!-- Upload your photos to the same folder as index.html or an /images subfolder -->
             <div class="portfolio-item">
-                <img src="images/grand-teton-hats.jpg" alt="Grand Teton bulk hat order">
+                <img src="images/anchorwatch-hat-collection.jpg" alt="AnchorWatch branded hat collection">
                 <div class="portfolio-overlay">
-                    <h4>Custom Trucker Hats</h4>
-                    <p>Bulk order &mdash; multiple colorways</p>
+                    <h4>Corporate Hat Collection</h4>
+                    <p>Richardson 112 &mdash; multiple colorways</p>
                 </div>
             </div>
             <div class="portfolio-item">
-                <img src="images/anchor-hats.jpg" alt="AnchorWatch branded hats">
-                <div class="portfolio-overlay">
-                    <h4>Corporate Branded Hats</h4>
-                    <p>Richardson caps &mdash; multi-color embroidery</p>
-                </div>
-            </div>
-            <div class="portfolio-item">
-                <img src="images/ocean-polo.jpg" alt="Branded corporate polo">
+                <img src="images/ocean-polo.jpg" alt="OCEAN branded corporate polo">
                 <div class="portfolio-overlay">
                     <h4>Corporate Polos</h4>
-                    <p>Professional branded apparel</p>
+                    <p>J.Crew polo &mdash; professional branded apparel</p>
                 </div>
             </div>
             <div class="portfolio-item">
-                <img src="images/blue-jacket.jpg" alt="Embroidered jacket">
+                <img src="images/bomber-jacket-front.jpg" alt="Embroidered bomber jacket">
                 <div class="portfolio-overlay">
-                    <h4>Embroidered Jackets</h4>
+                    <h4>Embroidered Bomber Jacket</h4>
                     <p>Corporate outerwear branding</p>
                 </div>
             </div>
             <div class="portfolio-item">
-                <img src="images/horizon-patches.jpg" alt="Horizon West Plumbing patches">
+                <img src="images/teton-adventure-hat.jpg" alt="HRF Teton Adventure custom trucker hat">
                 <div class="portfolio-overlay">
-                    <h4>Custom Patches</h4>
-                    <p>Horizon West Plumbing &mdash; bulk production</p>
+                    <h4>Custom Event Hats</h4>
+                    <p>Embroidered patch &mdash; bulk production</p>
                 </div>
             </div>
             <div class="portfolio-item">
-                <img src="images/anchorwatch-hoodie.jpg" alt="AnchorWatch hoodie">
+                <img src="images/anchorwatch-hoodie.jpg" alt="AnchorWatch embroidered zip hoodie">
                 <div class="portfolio-overlay">
-                    <h4>Branded Hoodies</h4>
-                    <p>Full front &amp; sleeve embroidery</p>
+                    <h4>Branded Zip Hoodies</h4>
+                    <p>Front logo + sleeve embroidery</p>
                 </div>
             </div>
             <div class="portfolio-item">
-                <img src="images/packaged-order.jpg" alt="Bulk order packaged and ready to ship">
+                <img src="images/custom-hats-camo.jpg" alt="Custom embroidered Otto hats">
                 <div class="portfolio-overlay">
-                    <h4>Packaged &amp; Ready</h4>
-                    <p>Bulk order &mdash; quality checked &amp; shipped</p>
+                    <h4>Custom Trucker Hats</h4>
+                    <p>Otto caps &mdash; camo &amp; classic styles</p>
                 </div>
             </div>
             <div class="portfolio-item">
-                <img src="images/embroidery-detail.jpg" alt="Close-up embroidery detail in hoop">
+                <img src="images/bulk-order-packaged.jpg" alt="Bulk order packaged and ready to ship">
                 <div class="portfolio-overlay">
-                    <h4>Precision Stitching</h4>
-                    <p>Quality craftsmanship on every piece</p>
+                    <h4>Bulk Order Ready to Ship</h4>
+                    <p>Sized, packed &amp; quality checked</p>
+                </div>
+            </div>
+            <div class="portfolio-item">
+                <img src="images/blue-jacket-embroidered.jpg" alt="Blue embroidered corporate jacket">
+                <div class="portfolio-overlay">
+                    <h4>Corporate Jackets</h4>
+                    <p>Clean logo embroidery on outerwear</p>
+                </div>
+            </div>
+            <div class="portfolio-item">
+                <img src="images/lacruz-hat-shirt-set.jpg" alt="La Cruz branded hat and shirt set">
+                <div class="portfolio-overlay">
+                    <h4>Hat + Shirt Sets</h4>
+                    <p>Matching branded apparel packages</p>
+                </div>
+            </div>
+            <div class="portfolio-item">
+                <img src="images/anchorwatch-crewneck.jpg" alt="AnchorWatch embroidered crewneck">
+                <div class="portfolio-overlay">
+                    <h4>Embroidered Crewnecks</h4>
+                    <p>Chest logo + sleeve branding</p>
+                </div>
+            </div>
+            <div class="portfolio-item">
+                <img src="images/embroidery-detail-hoop.jpg" alt="Detailed embroidery work in hoop">
+                <div class="portfolio-overlay">
+                    <h4>Precision Detail Work</h4>
+                    <p>Complex logo digitizing &amp; stitching</p>
+                </div>
+            </div>
+            <div class="portfolio-item">
+                <img src="images/knots-core-hats.jpg" alt="Custom embroidered dad hats">
+                <div class="portfolio-overlay">
+                    <h4>Custom Dad Hats</h4>
+                    <p>Washed cotton &mdash; old English embroidery</p>
                 </div>
             </div>
         </div>
@@ -814,11 +836,10 @@
             <div class="about-text">
                 <div class="section-label">About Us</div>
                 <h2>A Family Business Serving Our Community</h2>
-                <p>West Orange Embroidery started when we needed custom embroidered products for our own business and couldn't find a local shop that delivered the quality and service we were looking for. With my wife's background in sewing and design, we decided to do it ourselves — and quickly realized we could provide that same quality to other businesses in our community.</p>
+                <p>West Orange Embroidery started when we needed custom embroidered products for our own business and couldn't find a local shop that delivered the quality and service we were looking for. With my wife's background in sewing and design, we decided to do it ourselves &mdash; and quickly realized we could provide that same quality to other businesses in our community.</p>
                 <p>Nearly two years later, we're proud to serve Orlando-area companies, teams, and organizations from our shop in Winter Garden. We run two 10-needle embroidery machines, giving us the capacity to handle bulk orders while maintaining the personal attention that comes from being a true family operation.</p>
                 <p>When you work with us, you're working directly with the people doing the embroidery. No middlemen, no overseas production, no surprises. Just quality work from your neighbors in West Orange County.</p>
             </div>
-            <!-- Replace with a photo of you and your wife or your shop -->
             <div class="about-placeholder">
                 Add a photo of your shop or team here<br>(replace this div with an img tag)
             </div>
@@ -838,12 +859,12 @@
             <div class="step">
                 <div class="step-number">1</div>
                 <h3>Request a Quote</h3>
-                <p>Tell us what you need — product type, quantity, and your logo. We'll get back to you within 24 hours.</p>
+                <p>Tell us what you need &mdash; product type, quantity, and your logo. We'll get back to you within 24 hours.</p>
             </div>
             <div class="step">
                 <div class="step-number">2</div>
                 <h3>Approve Your Mockup</h3>
-                <p>We digitize your logo and send you a mockup to review. No surprises — you approve before we stitch.</p>
+                <p>We digitize your logo and send you a mockup to review. No surprises &mdash; you approve before we stitch.</p>
             </div>
             <div class="step">
                 <div class="step-number">3</div>
@@ -866,8 +887,7 @@
             <div class="contact-info">
                 <div class="section-label">Get Started</div>
                 <h2>Ready to Place an Order?</h2>
-                <p>Fill out the form and we'll get back to you within 24 hours with a quote. Or reach out directly — we're always happy to chat.</p>
-
+                <p>Fill out the form and we'll get back to you within 24 hours with a quote. Or reach out directly &mdash; we're always happy to chat.</p>
                 <div class="contact-detail">
                     <div class="contact-detail-icon">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" /></svg>
@@ -899,12 +919,10 @@
 
             <form class="quote-form" action="https://formsubmit.co/info@westorangeembroidery.com" method="POST" enctype="multipart/form-data">
                 <h3>Request a Free Quote</h3>
-                <!-- FormSubmit config -->
                 <input type="hidden" name="_subject" value="New Quote Request — West Orange Embroidery">
                 <input type="hidden" name="_captcha" value="false">
                 <input type="hidden" name="_template" value="table">
                 <input type="text" name="_honey" style="display:none">
-
                 <div class="form-row">
                     <div class="form-group">
                         <label for="name">Your Name</label>
@@ -986,8 +1004,8 @@
                 <ul>
                     <li><a href="#services">Corporate Apparel</a></li>
                     <li><a href="#services">Custom Headwear</a></li>
-                    <li><a href="#services">Team Gear</a></li>
-                    <li><a href="#services">Patches</a></li>
+                    <li><a href="#services">Outerwear</a></li>
+                    <li><a href="#services">Logo Digitizing</a></li>
                 </ul>
             </div>
         </div>
@@ -998,7 +1016,6 @@
 </footer>
 
 <script>
-    // Smooth scroll for nav links
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
             e.preventDefault();
