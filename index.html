@@ -3,1003 +3,1020 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>West Orange Embroidery | Bulk Custom Embroidery for Orlando Businesses</title>
-    <meta name="description" content="Bulk custom embroidery for Orlando-area businesses, teams, and organizations. 20-piece minimum. Fast local turnaround from Winter Garden, FL.">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <title>West Orange Embroidery - Custom Bulk Embroidery in Winter Garden, FL</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <style>
-        *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
-
-        :root {
-            --orange: #E8751A;
-            --orange-dark: #C96315;
-            --dark: #1a1a1a;
-            --gray-900: #222;
-            --gray-700: #555;
-            --gray-400: #999;
-            --gray-200: #e5e5e5;
-            --gray-100: #f5f5f5;
-            --white: #fff;
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
         }
 
         body {
-            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-            color: var(--dark);
+            font-family: 'Inter', sans-serif;
+            color: #333;
             line-height: 1.6;
-            background: var(--white);
         }
 
-        /* ── NAV ── */
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        /* Navigation */
         nav {
             position: fixed;
-            top: 0; left: 0; right: 0;
-            background: rgba(255,255,255,0.97);
-            backdrop-filter: blur(10px);
+            top: 0;
+            width: 100%;
+            background: white;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
             z-index: 1000;
-            border-bottom: 1px solid var(--gray-200);
-        }
-        .nav-inner {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 24px;
-            height: 72px;
+            padding: 0 40px;
             display: flex;
-            align-items: center;
             justify-content: space-between;
-        }
-        .nav-logo {
-            display: flex;
             align-items: center;
-            gap: 12px;
-            text-decoration: none;
-            color: var(--dark);
+            height: 70px;
         }
-        .nav-logo svg { width: 40px; height: 40px; }
-        .nav-logo span {
+
+        .logo {
+            font-size: 24px;
             font-weight: 700;
-            font-size: 1.1rem;
-            letter-spacing: -0.02em;
+            color: #E8751A;
         }
+
         .nav-links {
             display: flex;
-            align-items: center;
-            gap: 32px;
             list-style: none;
+            gap: 40px;
         }
+
         .nav-links a {
-            text-decoration: none;
-            color: var(--gray-700);
-            font-size: 0.9rem;
+            color: #333;
             font-weight: 500;
-            transition: color 0.2s;
+            transition: color 0.3s;
         }
-        .nav-links a:hover { color: var(--orange); }
-        .nav-cta {
-            background: var(--orange);
-            color: var(--white) !important;
-            padding: 10px 24px;
-            border-radius: 8px;
-            font-weight: 600 !important;
-            transition: background 0.2s !important;
-        }
-        .nav-cta:hover { background: var(--orange-dark) !important; }
 
-        .mobile-toggle {
+        .nav-links a:hover {
+            color: #E8751A;
+        }
+
+        .hamburger {
             display: none;
-            background: none;
-            border: none;
+            flex-direction: column;
             cursor: pointer;
-            padding: 8px;
-        }
-        .mobile-toggle span {
-            display: block;
-            width: 24px;
-            height: 2px;
-            background: var(--dark);
-            margin: 6px 0;
-            transition: 0.3s;
+            gap: 6px;
         }
 
-        /* ── HERO ── */
+        .hamburger span {
+            width: 25px;
+            height: 3px;
+            background: #333;
+            border-radius: 2px;
+        }
+
+        /* Hero Section */
         .hero {
-            padding: 160px 24px 100px;
             background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
-            color: var(--white);
+            color: white;
+            padding: 150px 40px 100px;
             text-align: center;
-            position: relative;
-            overflow: hidden;
+            margin-top: 70px;
         }
-        .hero::before {
-            content: '';
-            position: absolute;
-            top: -50%; right: -20%;
-            width: 600px; height: 600px;
-            background: radial-gradient(circle, rgba(232,117,26,0.15) 0%, transparent 70%);
-            border-radius: 50%;
-        }
-        .hero-content {
-            max-width: 800px;
-            margin: 0 auto;
-            position: relative;
-            z-index: 1;
-        }
-        .hero-badge {
-            display: inline-block;
-            background: rgba(232,117,26,0.15);
-            color: var(--orange);
-            padding: 6px 16px;
-            border-radius: 100px;
-            font-size: 0.85rem;
-            font-weight: 600;
-            margin-bottom: 24px;
-            border: 1px solid rgba(232,117,26,0.25);
-        }
+
         .hero h1 {
-            font-size: clamp(2.2rem, 5vw, 3.5rem);
-            font-weight: 800;
-            line-height: 1.1;
-            letter-spacing: -0.03em;
+            font-size: 56px;
             margin-bottom: 20px;
+            font-weight: 700;
         }
-        .hero h1 .highlight { color: var(--orange); }
+
         .hero p {
-            font-size: 1.15rem;
-            color: rgba(255,255,255,0.7);
-            max-width: 600px;
-            margin: 0 auto 36px;
-            line-height: 1.7;
+            font-size: 20px;
+            margin-bottom: 40px;
+            color: #ddd;
         }
-        .hero-buttons {
+
+        .hero-button {
+            display: inline-block;
+            background: #E8751A;
+            color: white;
+            padding: 14px 40px;
+            border-radius: 4px;
+            font-weight: 600;
+            transition: background 0.3s;
+            font-size: 16px;
+        }
+
+        .hero-button:hover {
+            background: #d46515;
+        }
+
+        .stats-bar {
             display: flex;
-            gap: 16px;
             justify-content: center;
+            gap: 80px;
+            margin-top: 60px;
             flex-wrap: wrap;
         }
-        .btn {
-            display: inline-flex;
-            align-items: center;
-            gap: 8px;
-            padding: 14px 32px;
-            border-radius: 10px;
-            font-size: 1rem;
-            font-weight: 600;
-            text-decoration: none;
-            transition: all 0.2s;
-            cursor: pointer;
-            border: none;
-        }
-        .btn-primary {
-            background: var(--orange);
-            color: var(--white);
-        }
-        .btn-primary:hover { background: var(--orange-dark); transform: translateY(-1px); }
-        .btn-secondary {
-            background: rgba(255,255,255,0.1);
-            color: var(--white);
-            border: 1px solid rgba(255,255,255,0.2);
-        }
-        .btn-secondary:hover { background: rgba(255,255,255,0.15); }
 
-        .hero-stats {
-            display: flex;
-            justify-content: center;
-            gap: 48px;
-            margin-top: 60px;
-            padding-top: 40px;
-            border-top: 1px solid rgba(255,255,255,0.1);
-        }
-        .stat { text-align: center; }
-        .stat-number {
-            font-size: 1.8rem;
-            font-weight: 800;
-            color: var(--orange);
-        }
-        .stat-label {
-            font-size: 0.8rem;
-            color: rgba(255,255,255,0.5);
-            text-transform: uppercase;
-            letter-spacing: 0.08em;
-            margin-top: 4px;
-        }
-
-        /* ── SECTIONS ── */
-        section { padding: 100px 24px; }
-        .section-inner { max-width: 1200px; margin: 0 auto; }
-        .section-header {
+        .stat {
             text-align: center;
-            max-width: 600px;
-            margin: 0 auto 60px;
-        }
-        .section-label {
-            display: inline-block;
-            color: var(--orange);
-            font-size: 0.8rem;
-            font-weight: 700;
-            text-transform: uppercase;
-            letter-spacing: 0.1em;
-            margin-bottom: 12px;
-        }
-        .section-header h2 {
-            font-size: clamp(1.8rem, 3vw, 2.5rem);
-            font-weight: 800;
-            letter-spacing: -0.02em;
-            margin-bottom: 16px;
-        }
-        .section-header p {
-            color: var(--gray-700);
-            font-size: 1.05rem;
         }
 
-        /* ── SERVICES ── */
-        .services { background: var(--gray-100); }
+        .stat-number {
+            font-size: 36px;
+            font-weight: 700;
+            color: #E8751A;
+        }
+
+        .stat-label {
+            font-size: 14px;
+            color: #bbb;
+            margin-top: 8px;
+        }
+
+        /* Services Section */
+        .services {
+            padding: 100px 40px;
+            background: #f9f9f9;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 42px;
+            margin-bottom: 60px;
+            color: #1a1a1a;
+        }
+
         .services-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
-            gap: 24px;
-        }
-        .service-card {
-            background: var(--white);
-            border-radius: 16px;
-            overflow: hidden;
-            transition: transform 0.2s, box-shadow 0.2s;
-            border: 1px solid var(--gray-200);
-        }
-        .service-card:hover {
-            transform: translateY(-4px);
-            box-shadow: 0 12px 40px rgba(0,0,0,0.08);
-        }
-        .service-img {
-            width: 100%;
-            height: 200px;
-            object-fit: cover;
-            display: block;
-            background: var(--gray-200);
-        }
-        .service-body { padding: 24px; }
-        .service-body h3 {
-            font-size: 1.15rem;
-            font-weight: 700;
-            margin-bottom: 8px;
-        }
-        .service-body p {
-            color: var(--gray-700);
-            font-size: 0.95rem;
-            line-height: 1.6;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            max-width: 1200px;
+            margin: 0 auto;
         }
 
-        /* ── PORTFOLIO ── */
+        .service-card {
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .service-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+        }
+
+        .service-image {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+        }
+
+        .service-content {
+            padding: 30px;
+        }
+
+        .service-content h3 {
+            font-size: 20px;
+            margin-bottom: 12px;
+            color: #1a1a1a;
+        }
+
+        .service-content p {
+            color: #666;
+            font-size: 14px;
+        }
+
+        /* Portfolio Section */
+        .portfolio {
+            padding: 100px 40px;
+        }
+
         .portfolio-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-            gap: 20px;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+            max-width: 1200px;
+            margin: 0 auto;
         }
+
         .portfolio-item {
-            border-radius: 12px;
-            overflow: hidden;
-            aspect-ratio: 4/3;
             position: relative;
-            cursor: pointer;
-            background: var(--gray-200);
+            overflow: hidden;
+            border-radius: 8px;
+            aspect-ratio: 1;
+            background: #f0f0f0;
         }
-        .portfolio-item img {
+
+        .portfolio-image {
             width: 100%;
             height: 100%;
             object-fit: cover;
             transition: transform 0.3s;
         }
-        .portfolio-item:hover img { transform: scale(1.05); }
+
+        .portfolio-item:hover .portfolio-image {
+            transform: scale(1.1);
+        }
+
         .portfolio-overlay {
             position: absolute;
-            bottom: 0; left: 0; right: 0;
-            background: linear-gradient(transparent, rgba(0,0,0,0.7));
-            padding: 40px 20px 20px;
-            color: var(--white);
-            opacity: 0;
-            transition: opacity 0.3s;
-        }
-        .portfolio-item:hover .portfolio-overlay { opacity: 1; }
-        .portfolio-overlay h4 { font-size: 0.95rem; font-weight: 600; }
-        .portfolio-overlay p { font-size: 0.8rem; opacity: 0.8; margin-top: 4px; }
-
-        /* ── WHY US ── */
-        .why-us { background: var(--gray-100); }
-        .why-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-            gap: 32px;
-        }
-        .why-card {
-            text-align: center;
-            padding: 40px 24px;
-            background: var(--white);
-            border-radius: 16px;
-            border: 1px solid var(--gray-200);
-        }
-        .why-icon {
-            width: 56px; height: 56px;
-            background: rgba(232,117,26,0.1);
-            border-radius: 14px;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.7);
             display: flex;
             align-items: center;
             justify-content: center;
-            margin: 0 auto 20px;
-        }
-        .why-icon svg { width: 28px; height: 28px; color: var(--orange); }
-        .why-card h3 {
-            font-size: 1.1rem;
-            font-weight: 700;
-            margin-bottom: 10px;
-        }
-        .why-card p {
-            color: var(--gray-700);
-            font-size: 0.92rem;
-            line-height: 1.6;
+            opacity: 0;
+            transition: opacity 0.3s;
         }
 
-        /* ── ABOUT ── */
-        .about-grid {
+        .portfolio-item:hover .portfolio-overlay {
+            opacity: 1;
+        }
+
+        .portfolio-overlay-text {
+            color: white;
+            font-size: 18px;
+            font-weight: 600;
+            text-align: center;
+        }
+
+        /* Why Us Section */
+        .why-us {
+            padding: 100px 40px;
+            background: #f9f9f9;
+        }
+
+        .why-us-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .why-us-card {
+            text-align: center;
+        }
+
+        .why-us-icon {
+            width: 60px;
+            height: 60px;
+            margin: 0 auto 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .why-us-icon svg {
+            width: 100%;
+            height: 100%;
+            stroke: #E8751A;
+            stroke-width: 2;
+            fill: none;
+        }
+
+        .why-us-card h3 {
+            font-size: 18px;
+            margin-bottom: 12px;
+            color: #1a1a1a;
+        }
+
+        .why-us-card p {
+            color: #666;
+            font-size: 14px;
+        }
+
+        /* About Section */
+        .about {
+            padding: 100px 40px;
+        }
+
+        .about-content {
+            max-width: 1000px;
+            margin: 0 auto;
             display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 60px;
             align-items: center;
         }
-        .about-text .section-label { text-align: left; }
+
         .about-text h2 {
-            font-size: clamp(1.8rem, 3vw, 2.4rem);
-            font-weight: 800;
-            letter-spacing: -0.02em;
+            font-size: 36px;
             margin-bottom: 20px;
+            color: #1a1a1a;
         }
+
         .about-text p {
-            color: var(--gray-700);
-            font-size: 1rem;
+            color: #666;
             margin-bottom: 16px;
-            line-height: 1.7;
+            line-height: 1.8;
         }
-        .about-img {
+
+        .about-image-placeholder {
             width: 100%;
             height: 400px;
-            border-radius: 20px;
-            background: var(--gray-200);
-            object-fit: cover;
-        }
-        .about-placeholder {
-            width: 100%;
-            height: 400px;
-            border-radius: 20px;
-            background: linear-gradient(135deg, var(--gray-200), var(--gray-100));
+            background: #e8e8e8;
+            border-radius: 8px;
             display: flex;
             align-items: center;
             justify-content: center;
-            color: var(--gray-400);
-            font-size: 0.9rem;
+            color: #999;
+            font-weight: 500;
             text-align: center;
             padding: 20px;
         }
 
-        /* ── PROCESS ── */
-        .process { background: var(--dark); color: var(--white); }
-        .process .section-header p { color: rgba(255,255,255,0.6); }
+        /* Process Section */
+        .process {
+            padding: 100px 40px;
+            background: #f9f9f9;
+        }
+
         .process-steps {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-            gap: 32px;
-            margin-top: 60px;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 30px;
+            max-width: 1200px;
+            margin: 0 auto;
         }
-        .step {
+
+        .process-step {
             text-align: center;
-            padding: 32px 20px;
         }
+
         .step-number {
-            width: 48px; height: 48px;
-            background: var(--orange);
+            width: 50px;
+            height: 50px;
+            background: #E8751A;
+            color: white;
             border-radius: 50%;
             display: flex;
             align-items: center;
             justify-content: center;
-            margin: 0 auto 20px;
-            font-weight: 800;
-            font-size: 1.2rem;
-        }
-        .step h3 {
-            font-size: 1.05rem;
+            font-size: 24px;
             font-weight: 700;
-            margin-bottom: 10px;
-        }
-        .step p {
-            color: rgba(255,255,255,0.6);
-            font-size: 0.9rem;
-            line-height: 1.6;
+            margin: 0 auto 20px;
         }
 
-        /* ── CONTACT / QUOTE ── */
-        .contact { background: var(--gray-100); }
-        .contact-grid {
+        .process-step h3 {
+            font-size: 18px;
+            margin-bottom: 12px;
+            color: #1a1a1a;
+        }
+
+        .process-step p {
+            color: #666;
+            font-size: 14px;
+        }
+
+        /* Contact Section */
+        .contact {
+            padding: 100px 40px;
+        }
+
+        .contact-content {
+            max-width: 900px;
+            margin: 0 auto;
             display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 60px;
         }
+
         .contact-info h2 {
-            font-size: 2rem;
-            font-weight: 800;
-            letter-spacing: -0.02em;
-            margin-bottom: 16px;
+            font-size: 36px;
+            margin-bottom: 30px;
         }
-        .contact-info p {
-            color: var(--gray-700);
-            font-size: 1rem;
-            margin-bottom: 32px;
-            line-height: 1.7;
-        }
-        .contact-detail {
+
+        .contact-item {
+            margin-bottom: 30px;
             display: flex;
-            align-items: center;
-            gap: 14px;
-            margin-bottom: 20px;
+            gap: 15px;
+            align-items: flex-start;
         }
-        .contact-detail-icon {
-            width: 44px; height: 44px;
-            background: rgba(232,117,26,0.1);
-            border-radius: 12px;
+
+        .contact-icon {
+            width: 40px;
+            height: 40px;
+            flex-shrink: 0;
             display: flex;
             align-items: center;
             justify-content: center;
-            flex-shrink: 0;
         }
-        .contact-detail-icon svg { width: 20px; height: 20px; color: var(--orange); }
-        .contact-detail-text { font-size: 0.95rem; color: var(--gray-700); }
-        .contact-detail-text strong { display: block; color: var(--dark); font-weight: 600; }
 
-        .quote-form {
-            background: var(--white);
-            padding: 40px;
-            border-radius: 20px;
-            border: 1px solid var(--gray-200);
+        .contact-icon svg {
+            width: 100%;
+            height: 100%;
+            stroke: #E8751A;
+            stroke-width: 2;
+            fill: none;
         }
-        .quote-form h3 {
-            font-size: 1.3rem;
-            font-weight: 700;
-            margin-bottom: 24px;
+
+        .contact-details h3 {
+            font-size: 16px;
+            margin-bottom: 5px;
         }
-        .form-row {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 16px;
+
+        .contact-details p {
+            color: #666;
         }
-        .form-group { margin-bottom: 16px; }
-        .form-group.full { grid-column: 1 / -1; }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
         .form-group label {
             display: block;
-            font-size: 0.85rem;
-            font-weight: 600;
-            margin-bottom: 6px;
-            color: var(--dark);
+            margin-bottom: 8px;
+            font-weight: 500;
+            color: #1a1a1a;
         }
+
         .form-group input,
-        .form-group select,
+        .form-group textarea,
+        .form-group select {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-family: 'Inter', sans-serif;
+            font-size: 14px;
+        }
+
         .form-group textarea {
-            width: 100%;
-            padding: 12px 16px;
-            border: 1px solid var(--gray-200);
-            border-radius: 10px;
-            font-size: 0.95rem;
-            font-family: inherit;
-            background: var(--gray-100);
-            transition: border-color 0.2s;
-            color: var(--dark);
+            resize: vertical;
+            min-height: 100px;
         }
+
         .form-group input:focus,
-        .form-group select:focus,
-        .form-group textarea:focus {
+        .form-group textarea:focus,
+        .form-group select:focus {
             outline: none;
-            border-color: var(--orange);
-            background: var(--white);
+            border-color: #E8751A;
+            box-shadow: 0 0 0 3px rgba(232, 117, 26, 0.1);
         }
-        .form-group textarea { resize: vertical; min-height: 100px; }
-        .form-submit {
-            width: 100%;
-            padding: 14px;
-            background: var(--orange);
-            color: var(--white);
+
+        .submit-button {
+            background: #E8751A;
+            color: white;
+            padding: 14px 40px;
             border: none;
-            border-radius: 10px;
-            font-size: 1rem;
-            font-weight: 700;
+            border-radius: 4px;
+            font-weight: 600;
             cursor: pointer;
-            transition: background 0.2s;
-            font-family: inherit;
-            margin-top: 8px;
+            transition: background 0.3s;
+            font-size: 16px;
+            width: 100%;
         }
-        .form-submit:hover { background: var(--orange-dark); }
 
-        /* ── FOOTER ── */
+        .submit-button:hover {
+            background: #d46515;
+        }
+
+        /* Footer */
         footer {
-            background: var(--dark);
-            color: rgba(255,255,255,0.6);
-            padding: 60px 24px 30px;
-        }
-        .footer-inner { max-width: 1200px; margin: 0 auto; }
-        .footer-top {
-            display: flex;
-            justify-content: space-between;
-            align-items: flex-start;
-            flex-wrap: wrap;
-            gap: 40px;
-            padding-bottom: 40px;
-            border-bottom: 1px solid rgba(255,255,255,0.1);
-        }
-        .footer-brand { max-width: 300px; }
-        .footer-brand .nav-logo { margin-bottom: 16px; }
-        .footer-brand .nav-logo span { color: var(--white); }
-        .footer-brand p { font-size: 0.9rem; line-height: 1.6; }
-        .footer-links h4 {
-            color: var(--white);
-            font-size: 0.85rem;
-            font-weight: 700;
-            text-transform: uppercase;
-            letter-spacing: 0.08em;
-            margin-bottom: 16px;
-        }
-        .footer-links ul { list-style: none; }
-        .footer-links li { margin-bottom: 10px; }
-        .footer-links a {
-            color: rgba(255,255,255,0.6);
-            text-decoration: none;
-            font-size: 0.9rem;
-            transition: color 0.2s;
-        }
-        .footer-links a:hover { color: var(--orange); }
-        .footer-bottom {
-            padding-top: 24px;
+            background: #1a1a1a;
+            color: white;
+            padding: 40px;
             text-align: center;
-            font-size: 0.8rem;
         }
 
-        /* ── RESPONSIVE ── */
-        @media (max-width: 768px) {
-            .nav-links { display: none; }
-            .mobile-toggle { display: block; }
-            .nav-links.open {
-                display: flex;
-                flex-direction: column;
-                position: absolute;
-                top: 72px; left: 0; right: 0;
-                background: var(--white);
-                padding: 24px;
-                border-bottom: 1px solid var(--gray-200);
-                gap: 16px;
-            }
-            .hero { padding: 130px 20px 70px; }
-            .hero-stats { gap: 24px; flex-wrap: wrap; }
-            .services-grid { grid-template-columns: 1fr; }
-            .about-grid { grid-template-columns: 1fr; gap: 32px; }
-            .contact-grid { grid-template-columns: 1fr; gap: 32px; }
-            .form-row { grid-template-columns: 1fr; }
-            .footer-top { flex-direction: column; }
-            .portfolio-grid { grid-template-columns: 1fr 1fr; }
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 30px;
+            margin-bottom: 30px;
+            text-align: left;
         }
+
+        .footer-section h4 {
+            margin-bottom: 15px;
+        }
+
+        .footer-section ul {
+            list-style: none;
+        }
+
+        .footer-section ul li {
+            margin-bottom: 8px;
+        }
+
+        .footer-section a {
+            color: #ccc;
+            transition: color 0.3s;
+        }
+
+        .footer-section a:hover {
+            color: #E8751A;
+        }
+
+        .footer-bottom {
+            border-top: 1px solid #333;
+            padding-top: 20px;
+            text-align: center;
+            color: #999;
+        }
+
+        /* Mobile Responsive */
+        @media (max-width: 768px) {
+            nav {
+                padding: 0 20px;
+            }
+
+            .nav-links {
+                display: none;
+                position: absolute;
+                top: 70px;
+                left: 0;
+                right: 0;
+                background: white;
+                flex-direction: column;
+                padding: 20px;
+                gap: 20px;
+                box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            }
+
+            .nav-links.active {
+                display: flex;
+            }
+
+            .hamburger {
+                display: flex;
+            }
+
+            .hero {
+                padding: 120px 20px 80px;
+            }
+
+            .hero h1 {
+                font-size: 36px;
+            }
+
+            .hero p {
+                font-size: 16px;
+            }
+
+            .stats-bar {
+                gap: 40px;
+            }
+
+            .stat-number {
+                font-size: 28px;
+            }
+
+            .section-title {
+                font-size: 32px;
+                margin-bottom: 40px;
+            }
+
+            .services, .portfolio, .why-us, .process, .contact {
+                padding: 60px 20px;
+            }
+
+            .services-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .portfolio-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .why-us-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 20px;
+            }
+
+            .process-steps {
+                grid-template-columns: 1fr;
+            }
+
+            .about-content, .contact-content {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+
+            .about-text h2 {
+                font-size: 28px;
+            }
+
+            .contact-info h2 {
+                font-size: 28px;
+            }
+
+            .footer-content {
+                grid-template-columns: 1fr;
+            }
+        }
+
         @media (max-width: 480px) {
-            .portfolio-grid { grid-template-columns: 1fr; }
+            .hero h1 {
+                font-size: 28px;
+            }
+
+            .section-title {
+                font-size: 24px;
+            }
+
+            .why-us-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .portfolio-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .stats-bar {
+                gap: 20px;
+            }
         }
     </style>
 </head>
 <body>
-
-<!-- NAV -->
-<nav>
-    <div class="nav-inner">
-        <a href="#" class="nav-logo">
-            <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <circle cx="20" cy="20" r="20" fill="#E8751A"/>
-                <text x="20" y="26" text-anchor="middle" fill="white" font-family="Inter, sans-serif" font-weight="800" font-size="18">W</text>
-            </svg>
-            <span>West Orange Embroidery</span>
-        </a>
+    <!-- Navigation -->
+    <nav>
+        <div class="logo">West Orange Embroidery</div>
         <ul class="nav-links" id="navLinks">
             <li><a href="#services">Services</a></li>
-            <li><a href="#portfolio">Our Work</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#why-us">Why Us</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#process">Process</a></li>
-            <li><a href="#contact" class="nav-cta">Get a Quote</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
-        <button class="mobile-toggle" onclick="document.getElementById('navLinks').classList.toggle('open')">
-            <span></span><span></span><span></span>
-        </button>
-    </div>
-</nav>
-
-<!-- HERO -->
-<section class="hero">
-    <div class="hero-content">
-        <div class="hero-badge">Winter Garden, FL &mdash; Serving the Greater Orlando Area</div>
-        <h1>Bulk Custom <span class="highlight">Embroidery</span> for Businesses &amp; Organizations</h1>
-        <p>Professional embroidery for corporate apparel, team uniforms, and promotional products. Local production, fast turnaround, quality you can see and feel.</p>
-        <div class="hero-buttons">
-            <a href="#contact" class="btn btn-primary">Get a Free Quote</a>
-            <a href="#portfolio" class="btn btn-secondary">View Our Work</a>
+        <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
         </div>
-        <div class="hero-stats">
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>Custom Bulk Embroidery Done Right</h1>
+        <p>Professional embroidery services for businesses, teams, and organizations in Winter Garden, FL</p>
+        <a href="#contact" class="hero-button">Get Your Quote</a>
+        <div class="stats-bar">
             <div class="stat">
                 <div class="stat-number">2+</div>
                 <div class="stat-label">Years Experience</div>
             </div>
             <div class="stat">
-                <div class="stat-number">20 pc</div>
-                <div class="stat-label">Minimum Order</div>
+                <div class="stat-number">20+</div>
+                <div class="stat-label">Piece Minimum</div>
             </div>
             <div class="stat">
                 <div class="stat-number">100%</div>
-                <div class="stat-label">Local Production</div>
+                <div class="stat-label">Custom Quality</div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
-<!-- SERVICES -->
-<section class="services" id="services">
-    <div class="section-inner">
-        <div class="section-header">
-            <div class="section-label">What We Do</div>
-            <h2>Embroidery Services for Every Need</h2>
-            <p>From corporate polos to team uniforms, we handle bulk embroidery orders with precision and care.</p>
-        </div>
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <h2 class="section-title">Our Services</h2>
         <div class="services-grid">
             <div class="service-card">
-                <img src="images/ocean-polo.jpg" alt="Corporate polo with embroidered logo" class="service-img">
-                <div class="service-body">
+                <img src="ocean-polo-black.jpg" alt="Corporate Apparel" class="service-image">
+                <div class="service-content">
                     <h3>Corporate Apparel</h3>
-                    <p>Branded polos, button-downs, and professional wear for your entire team. Consistent quality across every piece, every order.</p>
+                    <p>Professional embroidered shirts and polos perfect for company branding and team identity.</p>
                 </div>
             </div>
             <div class="service-card">
-                <img src="images/teton-adventure-hat.jpg" alt="Custom embroidered trucker hat" class="service-img">
-                <div class="service-body">
+                <img src="horizon-west-trucker-hats.jpg" alt="Custom Headwear" class="service-image">
+                <div class="service-content">
                     <h3>Custom Headwear</h3>
-                    <p>Trucker hats, fitted caps, beanies, and more. Bulk orders for events, teams, retail, and corporate giveaways.</p>
+                    <p>Branded hats, caps, and beanies that make your logo stand out on every head.</p>
                 </div>
             </div>
             <div class="service-card">
-                <img src="images/blue-jacket-embroidered.jpg" alt="Embroidered team jacket" class="service-img">
-                <div class="service-body">
-                    <h3>Outerwear &amp; Jackets</h3>
-                    <p>Embroidered jackets, hoodies, quarter-zips, and fleece. Professional branding on premium outerwear.</p>
+                <img src="ai-rights-bomber-flatlay.jpg" alt="Outerwear & Jackets" class="service-image">
+                <div class="service-content">
+                    <h3>Outerwear & Jackets</h3>
+                    <p>Durable embroidered jackets and outerwear for maximum brand visibility.</p>
                 </div>
             </div>
             <div class="service-card">
-                <img src="images/anchorwatch-crewneck.jpg" alt="Embroidered crewneck sweatshirt" class="service-img">
-                <div class="service-body">
-                    <h3>Sweatshirts &amp; Hoodies</h3>
-                    <p>Crewnecks, hoodies, and zip-ups with clean embroidered branding. Perfect for teams, events, and company gear.</p>
+                <img src="anchorwatch-patagonia-pullover.jpg" alt="Sweatshirts & Hoodies" class="service-image">
+                <div class="service-content">
+                    <h3>Sweatshirts & Hoodies</h3>
+                    <p>Cozy embroidered sweatshirts and hoodies perfect for team wear and events.</p>
                 </div>
             </div>
             <div class="service-card">
-                <img src="images/embroidery-detail-hoop.jpg" alt="Detailed embroidery in hoop" class="service-img">
-                <div class="service-body">
+                <img src="embroidery-machine-patches.jpg" alt="Logo Digitizing" class="service-image">
+                <div class="service-content">
                     <h3>Logo Digitizing</h3>
-                    <p>We convert your logo into an embroidery-ready file. Clean, precise digitizing that translates your brand into thread.</p>
+                    <p>We convert your artwork into machine-ready embroidery files with precision.</p>
                 </div>
             </div>
             <div class="service-card">
-                <img src="images/bulk-order-packaged.jpg" alt="Bulk order packaged for delivery" class="service-img">
-                <div class="service-body">
+                <img src="bulk-jacket-order.jpg" alt="Bulk Orders" class="service-image">
+                <div class="service-content">
                     <h3>Bulk Orders</h3>
-                    <p>Built for volume. From 20 to 200+ pieces, we handle large orders with consistent quality and on-time delivery.</p>
+                    <p>Large quantity orders handled with care, quality control, and fast turnaround times.</p>
                 </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
-<!-- PORTFOLIO -->
-<section id="portfolio">
-    <div class="section-inner">
-        <div class="section-header">
-            <div class="section-label">Our Work</div>
-            <h2>Built for Businesses Like Yours</h2>
-            <p>A selection of recent projects for companies, teams, and organizations.</p>
-        </div>
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio">
+        <h2 class="section-title">Our Work</h2>
         <div class="portfolio-grid">
             <div class="portfolio-item">
-                <img src="images/anchorwatch-hat-collection.jpg" alt="AnchorWatch branded hat collection">
+                <img src="horizon-west-trucker-hats.jpg" alt="Horizon West Plumbing Trucker Hats" class="portfolio-image">
                 <div class="portfolio-overlay">
-                    <h4>Corporate Hat Collection</h4>
-                    <p>Richardson 112 &mdash; multiple colorways</p>
+                    <div class="portfolio-overlay-text">Horizon West Plumbing</div>
                 </div>
             </div>
             <div class="portfolio-item">
-                <img src="images/ocean-polo.jpg" alt="OCEAN branded corporate polo">
+                <img src="ocean-polo-black.jpg" alt="Under Armour Corporate Polo" class="portfolio-image">
                 <div class="portfolio-overlay">
-                    <h4>Corporate Polos</h4>
-                    <p>J.Crew polo &mdash; professional branded apparel</p>
+                    <div class="portfolio-overlay-text">Corporate Polos</div>
                 </div>
             </div>
             <div class="portfolio-item">
-                <img src="images/bomber-jacket-front.jpg" alt="Embroidered bomber jacket">
+                <img src="ai-rights-bomber-flatlay.jpg" alt="Custom Embroidered Bomber Jacket" class="portfolio-image">
                 <div class="portfolio-overlay">
-                    <h4>Embroidered Bomber Jacket</h4>
-                    <p>Corporate outerwear branding</p>
+                    <div class="portfolio-overlay-text">Custom Bomber Jackets</div>
                 </div>
             </div>
             <div class="portfolio-item">
-                <img src="images/teton-adventure-hat.jpg" alt="HRF Teton Adventure custom trucker hat">
+                <img src="24-patch-detail.jpg" alt="Embroidery Detail Work" class="portfolio-image">
                 <div class="portfolio-overlay">
-                    <h4>Custom Event Hats</h4>
-                    <p>Embroidered patch &mdash; bulk production</p>
+                    <div class="portfolio-overlay-text">Precision Detail Work</div>
                 </div>
             </div>
             <div class="portfolio-item">
-                <img src="images/anchorwatch-hoodie.jpg" alt="AnchorWatch embroidered zip hoodie">
+                <img src="anchorwatch-patagonia-pullover.jpg" alt="AnchorWatch Patagonia Pullover" class="portfolio-image">
                 <div class="portfolio-overlay">
-                    <h4>Branded Zip Hoodies</h4>
-                    <p>Front logo + sleeve embroidery</p>
+                    <div class="portfolio-overlay-text">Patagonia Pullover</div>
                 </div>
             </div>
             <div class="portfolio-item">
-                <img src="images/custom-hats-camo.jpg" alt="Custom embroidered Otto hats">
+                <img src="freesamourai-hat-detail.jpg" alt="FreeSamourai Hat Embroidery" class="portfolio-image">
                 <div class="portfolio-overlay">
-                    <h4>Custom Trucker Hats</h4>
-                    <p>Otto caps &mdash; camo &amp; classic styles</p>
+                    <div class="portfolio-overlay-text">Custom Hat Embroidery</div>
                 </div>
             </div>
             <div class="portfolio-item">
-                <img src="images/bulk-order-packaged.jpg" alt="Bulk order packaged and ready to ship">
+                <img src="embroidery-machine-patches.jpg" alt="Patches in Production" class="portfolio-image">
                 <div class="portfolio-overlay">
-                    <h4>Bulk Order Ready to Ship</h4>
-                    <p>Sized, packed &amp; quality checked</p>
+                    <div class="portfolio-overlay-text">Patches in Production</div>
                 </div>
             </div>
             <div class="portfolio-item">
-                <img src="images/blue-jacket-embroidered.jpg" alt="Blue embroidered corporate jacket">
+                <img src="speculative-attack-hats-pair.jpg" alt="Speculative Attack Snapback Hats" class="portfolio-image">
                 <div class="portfolio-overlay">
-                    <h4>Corporate Jackets</h4>
-                    <p>Clean logo embroidery on outerwear</p>
+                    <div class="portfolio-overlay-text">Custom Snapback Hats</div>
                 </div>
             </div>
             <div class="portfolio-item">
-                <img src="images/lacruz-hat-shirt-set.jpg" alt="La Cruz branded hat and shirt set">
+                <img src="project-2140-bucket-hat.jpg" alt="Project 2140 Bucket Hat" class="portfolio-image">
                 <div class="portfolio-overlay">
-                    <h4>Hat + Shirt Sets</h4>
-                    <p>Matching branded apparel packages</p>
+                    <div class="portfolio-overlay-text">Custom Bucket Hats</div>
                 </div>
             </div>
             <div class="portfolio-item">
-                <img src="images/anchorwatch-crewneck.jpg" alt="AnchorWatch embroidered crewneck">
+                <img src="stoneway-hardware-hat.jpg" alt="Stoneway Hardware Hat" class="portfolio-image">
                 <div class="portfolio-overlay">
-                    <h4>Embroidered Crewnecks</h4>
-                    <p>Chest logo + sleeve branding</p>
+                    <div class="portfolio-overlay-text">Business Branding</div>
                 </div>
             </div>
             <div class="portfolio-item">
-                <img src="images/embroidery-detail-hoop.jpg" alt="Detailed embroidery work in hoop">
+                <img src="school-mascot-trucker-hat.jpg" alt="School Mascot Trucker Hat" class="portfolio-image">
                 <div class="portfolio-overlay">
-                    <h4>Precision Detail Work</h4>
-                    <p>Complex logo digitizing &amp; stitching</p>
+                    <div class="portfolio-overlay-text">School Spirit Wear</div>
                 </div>
             </div>
             <div class="portfolio-item">
-                <img src="images/knots-core-hats.jpg" alt="Custom embroidered dad hats">
+                <img src="blue-zip-jacket.jpg" alt="Custom Blue Zip-Up Jacket" class="portfolio-image">
                 <div class="portfolio-overlay">
-                    <h4>Custom Dad Hats</h4>
-                    <p>Washed cotton &mdash; old English embroidery</p>
+                    <div class="portfolio-overlay-text">Custom Zip-Up Jackets</div>
+                </div>
+            </div>
+            <div class="portfolio-item">
+                <img src="horizon-west-beanie-detail.jpg" alt="Horizon West Beanie Embroidery" class="portfolio-image">
+                <div class="portfolio-overlay">
+                    <div class="portfolio-overlay-text">Custom Beanie Embroidery</div>
+                </div>
+            </div>
+            <div class="portfolio-item">
+                <img src="ocean-trucker-hats.jpg" alt="OCEAN Corporate Trucker Hats" class="portfolio-image">
+                <div class="portfolio-overlay">
+                    <div class="portfolio-overlay-text">Corporate Trucker Hats</div>
+                </div>
+            </div>
+            <div class="portfolio-item">
+                <img src="anchorwatch-cap-trio.jpg" alt="AnchorWatch Cap Collection" class="portfolio-image">
+                <div class="portfolio-overlay">
+                    <div class="portfolio-overlay-text">Cap Collections</div>
+                </div>
+            </div>
+            <div class="portfolio-item">
+                <img src="bulk-jacket-order.jpg" alt="Bulk Bomber Jacket Order" class="portfolio-image">
+                <div class="portfolio-overlay">
+                    <div class="portfolio-overlay-text">Bulk Order Fulfillment</div>
                 </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
-<!-- WHY US -->
-<section class="why-us">
-    <div class="section-inner">
-        <div class="section-header">
-            <div class="section-label">Why West Orange</div>
-            <h2>What Sets Us Apart</h2>
-            <p>We're not a faceless factory. We're your local embroidery partner.</p>
+    <!-- Why Us Section -->
+    <section id="why-us" class="why-us">
+        <h2 class="section-title">Why Choose Us</h2>
+        <div class="why-us-grid">
+            <div class="why-us-card">
+                <div class="why-us-icon">
+                    <svg viewBox="0 0 24 24">
+                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                    </svg>
+                </div>
+                <h3>Expert Craftsmanship</h3>
+                <p>2+ years of experience delivering perfect embroidery on every order, every time.</p>
+            </div>
+            <div class="why-us-card">
+                <div class="why-us-icon">
+                    <svg viewBox="0 0 24 24">
+                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm3.5 9c.83 0 1.5-.67 1.5-1.5S16.33 8 15.5 8 14 8.67 14 9.5s.67 1.5 1.5 1.5zm-7 0c.83 0 1.5-.67 1.5-1.5S9.33 8 8.5 8 7 8.67 7 9.5 7.67 11 8.5 11zm3.5 6.5c2.33 0 4.31-1.46 5.11-3.5H6.89c.8 2.04 2.78 3.5 5.11 3.5z"/>
+                    </svg>
+                </div>
+                <h3>Husband & Wife Team</h3>
+                <p>Personal attention and dedication to every project from real business owners.</p>
+            </div>
+            <div class="why-us-card">
+                <div class="why-us-icon">
+                    <svg viewBox="0 0 24 24">
+                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z"/>
+                    </svg>
+                </div>
+                <h3>Affordable Quality</h3>
+                <p>Competitive pricing for bulk orders without compromising on quality or detail.</p>
+            </div>
+            <div class="why-us-card">
+                <div class="why-us-icon">
+                    <svg viewBox="0 0 24 24">
+                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                    </svg>
+                </div>
+                <h3>Fast Turnaround</h3>
+                <p>Quick production times for your bulk orders with reliable delivery to Winter Garden, FL.</p>
+            </div>
         </div>
-        <div class="why-grid">
-            <div class="why-card">
-                <div class="why-icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" /><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z" /></svg>
-                </div>
-                <h3>100% Local</h3>
-                <p>Based in Winter Garden, FL. Your order is produced right here, not shipped from overseas. Fast turnaround because we're in your backyard.</p>
-            </div>
-            <div class="why-card">
-                <div class="why-icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M15 19.128a9.38 9.38 0 0 0 2.625.372 9.337 9.337 0 0 0 4.121-.952 4.125 4.125 0 0 0-7.533-2.493M15 19.128v-.003c0-1.113-.285-2.16-.786-3.07M15 19.128v.106A12.318 12.318 0 0 1 8.624 21c-2.331 0-4.512-.645-6.374-1.766l-.001-.109a6.375 6.375 0 0 1 11.964-3.07M12 6.375a3.375 3.375 0 1 1-6.75 0 3.375 3.375 0 0 1 6.75 0Zm8.25 2.25a2.625 2.625 0 1 1-5.25 0 2.625 2.625 0 0 1 5.25 0Z" /></svg>
-                </div>
-                <h3>Direct Communication</h3>
-                <p>You talk to the people doing the work. No call centers, no runaround. Just a husband-and-wife team who care about your order.</p>
-            </div>
-            <div class="why-card">
-                <div class="why-icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 0 1-1.043 3.296 3.745 3.745 0 0 1-3.296 1.043A3.745 3.745 0 0 1 12 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 0 1-3.296-1.043 3.745 3.745 0 0 1-1.043-3.296A3.745 3.745 0 0 1 3 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 0 1 1.043-3.296 3.746 3.746 0 0 1 3.296-1.043A3.746 3.746 0 0 1 12 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 0 1 3.296 1.043 3.745 3.745 0 0 1 1.043 3.296A3.745 3.745 0 0 1 21 12Z" /></svg>
-                </div>
-                <h3>Quality Craftsmanship</h3>
-                <p>Every piece is inspected before it ships. Our name is on every order, so we treat your brand like our own.</p>
-            </div>
-            <div class="why-card">
-                <div class="why-icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m20.25 7.5-.625 10.632a2.25 2.25 0 0 1-2.247 2.118H6.622a2.25 2.25 0 0 1-2.247-2.118L3.75 7.5M10 11.25h4M3.375 7.5h17.25c.621 0 1.125-.504 1.125-1.125v-1.5c0-.621-.504-1.125-1.125-1.125H3.375c-.621 0-1.125.504-1.125 1.125v1.5c0 .621.504 1.125 1.125 1.125Z" /></svg>
-                </div>
-                <h3>Bulk Order Specialists</h3>
-                <p>We're built for volume. 20-piece minimum, with capacity to handle large corporate and team orders efficiently.</p>
-            </div>
-        </div>
-    </div>
-</section>
+    </section>
 
-<!-- ABOUT -->
-<section id="about">
-    <div class="section-inner">
-        <div class="about-grid">
+    <!-- About Section -->
+    <section id="about" class="about">
+        <h2 class="section-title">About Us</h2>
+        <div class="about-content">
             <div class="about-text">
-                <div class="section-label">About Us</div>
-                <h2>A Family Business Serving Our Community</h2>
-                <p>West Orange Embroidery started when we needed custom embroidered products for our own business and couldn't find a local shop that delivered the quality and service we were looking for. With my wife's background in sewing and design, we decided to do it ourselves &mdash; and quickly realized we could provide that same quality to other businesses in our community.</p>
-                <p>Nearly two years later, we're proud to serve Orlando-area companies, teams, and organizations from our shop in Winter Garden. We run two 10-needle embroidery machines, giving us the capacity to handle bulk orders while maintaining the personal attention that comes from being a true family operation.</p>
-                <p>When you work with us, you're working directly with the people doing the embroidery. No middlemen, no overseas production, no surprises. Just quality work from your neighbors in West Orange County.</p>
+                <h2>Your Local Embroidery Experts</h2>
+                <p>West Orange Embroidery is a husband-and-wife team based in Winter Garden, FL, dedicated to bringing your brand to life through custom embroidery.</p>
+                <p>With over 2 years of experience in the embroidery industry, we've perfected the art of creating professional, high-quality custom apparel for businesses, teams, and organizations.</p>
+                <p>We believe that quality doesn't have to come at a premium price. Our minimum order of just 20 pieces makes bulk embroidery accessible to businesses of all sizes.</p>
+                <p>Every stitch matters, and we're committed to delivering excellence on every single order.</p>
             </div>
-            <div class="about-placeholder">
-                Add a photo of your shop or team here<br>(replace this div with an img tag)
-            </div>
+            <div class="about-image-placeholder">Add a photo of your shop or team here</div>
         </div>
-    </div>
-</section>
+    </section>
 
-<!-- PROCESS -->
-<section class="process" id="process">
-    <div class="section-inner">
-        <div class="section-header">
-            <div class="section-label">How It Works</div>
-            <h2 style="color:#fff;">From Quote to Delivery in 4 Simple Steps</h2>
-            <p>We keep the process straightforward so you can focus on running your business.</p>
-        </div>
+    <!-- Process Section -->
+    <section id="process" class="process">
+        <h2 class="section-title">Our Process</h2>
         <div class="process-steps">
-            <div class="step">
+            <div class="process-step">
                 <div class="step-number">1</div>
-                <h3>Request a Quote</h3>
-                <p>Tell us what you need &mdash; product type, quantity, and your logo. We'll get back to you within 24 hours.</p>
+                <h3>Consultation</h3>
+                <p>Tell us about your project, your logo, and your vision. We'll discuss options and answer any questions.</p>
             </div>
-            <div class="step">
+            <div class="process-step">
                 <div class="step-number">2</div>
-                <h3>Approve Your Mockup</h3>
-                <p>We digitize your logo and send you a mockup to review. No surprises &mdash; you approve before we stitch.</p>
+                <h3>Design & Digitizing</h3>
+                <p>We'll digitize your artwork into machine-ready files and show you a proof for approval.</p>
             </div>
-            <div class="step">
+            <div class="process-step">
                 <div class="step-number">3</div>
                 <h3>Production</h3>
-                <p>Once approved, we get to work. Every piece is embroidered and inspected for quality at our Winter Garden shop.</p>
+                <p>Once approved, we produce your entire order with precision and quality control throughout.</p>
             </div>
-            <div class="step">
+            <div class="process-step">
                 <div class="step-number">4</div>
                 <h3>Delivery</h3>
-                <p>Your order is packaged and delivered. Local pickup available, or we ship directly to you.</p>
+                <p>Your completed order is packaged professionally and ready for pickup or shipping.</p>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
-<!-- CONTACT -->
-<section class="contact" id="contact">
-    <div class="section-inner">
-        <div class="contact-grid">
+    <!-- Contact & Quote Section -->
+    <section id="contact" class="contact">
+        <h2 class="section-title">Get Your Quote</h2>
+        <div class="contact-content">
             <div class="contact-info">
-                <div class="section-label">Get Started</div>
-                <h2>Ready to Place an Order?</h2>
-                <p>Fill out the form and we'll get back to you within 24 hours with a quote. Or reach out directly &mdash; we're always happy to chat.</p>
-                <div class="contact-detail">
-                    <div class="contact-detail-icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" /></svg>
+                <h2>Contact Us</h2>
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                        </svg>
                     </div>
-                    <div class="contact-detail-text">
-                        <strong>Email</strong>
-                        info@westorangeembroidery.com
-                    </div>
-                </div>
-                <div class="contact-detail">
-                    <div class="contact-detail-icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" /><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z" /></svg>
-                    </div>
-                    <div class="contact-detail-text">
-                        <strong>Location</strong>
-                        Winter Garden, FL
+                    <div class="contact-details">
+                        <h3>Email</h3>
+                        <p><a href="mailto:info@westorangeembroidery.com">info@westorangeembroidery.com</a></p>
                     </div>
                 </div>
-                <div class="contact-detail">
-                    <div class="contact-detail-icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" /></svg>
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M17 10.5V7c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1v10c0 .55.45 1 1 1h12c.55 0 1-.45 1-1v-3.5l4 4v-11l-4 4z"/>
+                        </svg>
                     </div>
-                    <div class="contact-detail-text">
-                        <strong>Turnaround</strong>
-                        Quotes within 24 hours
+                    <div class="contact-details">
+                        <h3>Location</h3>
+                        <p>Winter Garden, FL</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
+                        </svg>
+                    </div>
+                    <div class="contact-details">
+                        <h3>Minimum Order</h3>
+                        <p>20 pieces</p>
                     </div>
                 </div>
             </div>
 
-            <form class="quote-form" action="https://formsubmit.co/info@westorangeembroidery.com" method="POST" enctype="multipart/form-data">
-                <h3>Request a Free Quote</h3>
-                <input type="hidden" name="_subject" value="New Quote Request — West Orange Embroidery">
+            <form action="https://formsubmit.co/info@westorangeembroidery.com" method="POST" enctype="multipart/form-data">
                 <input type="hidden" name="_captcha" value="false">
-                <input type="hidden" name="_template" value="table">
-                <input type="text" name="_honey" style="display:none">
-                <div class="form-row">
-                    <div class="form-group">
-                        <label for="name">Your Name</label>
-                        <input type="text" id="name" name="name" required placeholder="John Smith">
-                    </div>
-                    <div class="form-group">
-                        <label for="company">Company / Organization</label>
-                        <input type="text" id="company" name="company" placeholder="ABC Plumbing">
-                    </div>
+                <input type="hidden" name="_subject" value="New Quote Request from Website">
+
+                <div class="form-group">
+                    <label for="name">Your Name *</label>
+                    <input type="text" id="name" name="name" required>
                 </div>
-                <div class="form-row">
-                    <div class="form-group">
-                        <label for="email">Email</label>
-                        <input type="email" id="email" name="email" required placeholder="you@company.com">
-                    </div>
-                    <div class="form-group">
-                        <label for="phone">Phone</label>
-                        <input type="tel" id="phone" name="phone" placeholder="(407) 555-1234">
-                    </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address *</label>
+                    <input type="email" id="email" name="email" required>
                 </div>
-                <div class="form-row">
-                    <div class="form-group">
-                        <label for="product">Product Type</label>
-                        <select id="product" name="product_type">
-                            <option value="">Select a product...</option>
-                            <option value="polos">Polos / Shirts</option>
-                            <option value="hats">Hats / Caps</option>
-                            <option value="jackets">Jackets / Outerwear</option>
-                            <option value="hoodies">Hoodies / Sweatshirts</option>
-                            <option value="patches">Patches</option>
-                            <option value="bags">Bags / Totes</option>
-                            <option value="other">Other</option>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <label for="quantity">Estimated Quantity</label>
-                        <input type="number" id="quantity" name="quantity" min="20" placeholder="Minimum 20 pieces">
-                    </div>
+
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone">
                 </div>
-                <div class="form-group full">
+
+                <div class="form-group">
+                    <label for="company">Company/Organization</label>
+                    <input type="text" id="company" name="company">
+                </div>
+
+                <div class="form-group">
+                    <label for="quantity">Quantity Needed *</label>
+                    <input type="number" id="quantity" name="quantity" min="20" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="apparel">Apparel Type *</label>
+                    <select id="apparel" name="apparel" required>
+                        <option value="">Select an option</option>
+                        <option value="Polos">Polos</option>
+                        <option value="T-Shirts">T-Shirts</option>
+                        <option value="Hats/Caps">Hats/Caps</option>
+                        <option value="Hoodies/Sweatshirts">Hoodies/Sweatshirts</option>
+                        <option value="Jackets">Jackets</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
                     <label for="details">Project Details</label>
-                    <textarea id="details" name="details" placeholder="Tell us about your project — colors, logo placement, deadline, etc."></textarea>
+                    <textarea id="details" name="details" placeholder="Tell us about your embroidery project, design ideas, and any special requests..."></textarea>
                 </div>
-                <div class="form-group full">
-                    <label for="logo">Upload Your Logo (optional)</label>
-                    <input type="file" id="logo" name="attachment" accept=".png,.jpg,.jpeg,.svg,.ai,.eps,.pdf">
+
+                <div class="form-group">
+                    <label for="logo">Upload Your Logo (JPG, PNG, PDF)</label>
+                    <input type="file" id="logo" name="logo" accept=".jpg,.jpeg,.png,.pdf">
                 </div>
-                <button type="submit" class="form-submit">Submit Quote Request</button>
+
+                <button type="submit" class="submit-button">Get Quote</button>
             </form>
         </div>
-    </div>
-</section>
+    </section>
 
-<!-- FOOTER -->
-<footer>
-    <div class="footer-inner">
-        <div class="footer-top">
-            <div class="footer-brand">
-                <a href="#" class="nav-logo">
-                    <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <circle cx="20" cy="20" r="20" fill="#E8751A"/>
-                        <text x="20" y="26" text-anchor="middle" fill="white" font-family="Inter, sans-serif" font-weight="800" font-size="18">W</text>
-                    </svg>
-                    <span>West Orange Embroidery</span>
-                </a>
-                <p>Bulk custom embroidery for Orlando-area businesses, teams, and organizations. Locally produced in Winter Garden, FL.</p>
-            </div>
-            <div class="footer-links">
-                <h4>Quick Links</h4>
-                <ul>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#portfolio">Our Work</a></li>
-                    <li><a href="#about">About Us</a></li>
-                    <li><a href="#contact">Get a Quote</a></li>
-                </ul>
-            </div>
-            <div class="footer-links">
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
                 <h4>Services</h4>
                 <ul>
                     <li><a href="#services">Corporate Apparel</a></li>
@@ -1008,25 +1025,58 @@
                     <li><a href="#services">Logo Digitizing</a></li>
                 </ul>
             </div>
+            <div class="footer-section">
+                <h4>Company</h4>
+                <ul>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#process">Process</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Location</h4>
+                <ul>
+                    <li>Winter Garden, FL</li>
+                    <li><a href="mailto:info@westorangeembroidery.com">info@westorangeembroidery.com</a></li>
+                    <li>20+ Piece Minimum</li>
+                </ul>
+            </div>
         </div>
         <div class="footer-bottom">
-            &copy; 2025 West Orange Embroidery. All rights reserved. | Winter Garden, FL
+            <p>&copy; 2025 West Orange Embroidery. All rights reserved.</p>
         </div>
-    </div>
-</footer>
+    </footer>
 
-<script>
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function (e) {
-            e.preventDefault();
-            const target = document.querySelector(this.getAttribute('href'));
-            if (target) {
-                target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-                document.getElementById('navLinks').classList.remove('open');
-            }
+    <script>
+        // Mobile menu toggle
+        const hamburger = document.getElementById('hamburger');
+        const navLinks = document.getElementById('navLinks');
+
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
         });
-    });
-</script>
 
+        // Close menu when a link is clicked
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('active');
+            });
+        });
+
+        // Smooth scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
 </body>
 </html>
