@@ -327,6 +327,40 @@
             background: #f9f9f9;
         }
 
+        /* FAQ Section */
+        .faq {
+            padding: 100px 40px;
+        }
+
+        .faq-container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .faq-item {
+            margin-bottom: 30px;
+            padding-bottom: 30px;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        .faq-item:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+
+        .faq-question {
+            font-size: 20px;
+            font-weight: 600;
+            color: #1a1a1a;
+            margin-bottom: 12px;
+        }
+
+        .faq-answer {
+            color: #666;
+            line-height: 1.8;
+        }
+
         .process-steps {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
@@ -565,7 +599,7 @@
                 margin-bottom: 40px;
             }
 
-            .services, .portfolio, .why-us, .process, .contact {
+            .services, .portfolio, .why-us, .process, .faq, .contact {
                 padding: 60px 20px;
             }
 
@@ -637,6 +671,7 @@
             <li><a href="#why-us">Why Us</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#process">Process</a></li>
+            <li><a href="#faq">FAQ</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
         <div class="hamburger" id="hamburger">
@@ -904,6 +939,57 @@
         </div>
     </section>
 
+    <!-- FAQ Section -->
+    <section id="faq" class="faq">
+        <h2 class="section-title">Frequently Asked Questions</h2>
+        <div class="faq-container">
+            <div class="faq-item">
+                <div class="faq-question">Do you provide the apparel, or just the embroidery?</div>
+                <div class="faq-answer">We can do either. Bring your own apparel (BYOG - Bring Your Own Garments) or we can source it for you. If we're sourcing, we'll provide options and pricing in your quote.</div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">What's your minimum order quantity?</div>
+                <div class="faq-answer">20 pieces per design. This keeps our pricing competitive while making bulk embroidery accessible for small to mid-sized teams and businesses.</div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">What file formats do you accept for logos?</div>
+                <div class="faq-answer">Vector files work best (.AI, .EPS, .PDF, .SVG). We can also work with high-resolution .PNG or .JPG files. If you only have a low-res image or business card, we'll let you know if it's usable or if we need to redraw it.</div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">Do you digitize logos, or do I need to provide embroidery files?</div>
+                <div class="faq-answer">We handle all digitizing in-house. Send us your logo and we'll convert it into an embroidery-ready file. One-time digitizing/setup fee applies per design.</div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">What's your typical turnaround time?</div>
+                <div class="faq-answer">Most orders: 7-10 business days from artwork approval. Rush orders available depending on our schedule — just ask.</div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">Can you match specific brand colors (PMS/Pantone)?</div>
+                <div class="faq-answer">Yes. We'll get as close as possible using our thread library. Keep in mind embroidery thread won't be a perfect match to printed ink, but we'll show you thread samples for approval before production.</div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">Do you offer design services or create logos?</div>
+                <div class="faq-answer">No. We're a production partner, not a design studio. Bring us your existing logo and branding, and we'll embroider it onto your apparel. If you need a logo designed, we can refer you to local designers.</div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">What areas do you serve?</div>
+                <div class="faq-answer">We're based in Winter Garden, FL and serve businesses throughout Central Florida — including Orlando, Ocoee, Windermere, Clermont, and surrounding areas. Shipping available for orders outside our local area.</div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">How do I get a quote?</div>
+                <div class="faq-answer">Fill out our quote form on the Contact section, or email us at info@westorangeembroidery.com with details about your project (quantity, apparel type, and logo). We'll get back to you within 1 business day.</div>
+            </div>
+        </div>
+    </section>
+
     <!-- Contact & Quote Section -->
     <section id="contact" class="contact">
         <h2 class="section-title">Get Your Quote</h2>
@@ -1020,6 +1106,7 @@
                     <li><a href="#about">About Us</a></li>
                     <li><a href="#portfolio">Portfolio</a></li>
                     <li><a href="#process">Process</a></li>
+                    <li><a href="#faq">FAQ</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </div>
