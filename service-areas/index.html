@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Service Areas | Custom Embroidery Near You | West Orange Embroidery</title>
+    <meta name="description" content="Custom embroidery and branded apparel across Central Florida. Find your local service area and get professional embroidery solutions.">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        body { 
+            font-family: 'Inter', sans-serif; 
+            color: #333; 
+            line-height: 1.6; 
+        }
+        
+        a { text-decoration: none; color: inherit; }
+        
+        /* Navigation */
+        nav { 
+            position: fixed; 
+            top: 0; 
+            width: 100%; 
+            background: white; 
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1); 
+            z-index: 1000; 
+            padding: 0 40px; 
+            display: flex; 
+            justify-content: space-between; 
+            align-items: center; 
+            height: 70px; 
+        }
+        
+        .logo { 
+            font-size: 24px; 
+            font-weight: 700; 
+            color: #E8751A; 
+        }
+        
+        .nav-links { 
+            display: flex; 
+            list-style: none; 
+            gap: 30px; 
+        }
+        
+        .nav-links a { 
+            color: #333; 
+            font-weight: 500; 
+            transition: color 0.3s; 
+            font-size: 14px; 
+        }
+        
+        .nav-links a:hover { 
+            color: #E8751A; 
+        }
+        
+        .hamburger { 
+            display: none; 
+            flex-direction: column; 
+            cursor: pointer; 
+            gap: 6px; 
+        }
+        
+        .hamburger span { 
+            width: 25px; 
+            height: 3px; 
+            background: #333; 
+            border-radius: 2px; 
+        }
+        
+        /* Service Area dropdown */
+        .dropdown { position: relative; }
+        .dropdown-content { 
+            display: none; 
+            position: absolute; 
+            top: 100%; 
+            left: 0; 
+            background: white; 
+            min-width: 220px; 
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1); 
+            border-radius: 4px; 
+            padding: 10px 0; 
+            z-index: 1001; 
+        }
+        .dropdown:hover .dropdown-content { display: block; }
+        .dropdown-content a { 
+            display: block; 
+            padding: 8px 20px; 
+            font-size: 13px; 
+            color: #333; 
+        }
+        .dropdown-content a:hover { 
+            background: #f9f9f9; 
+            color: #E8751A; 
+        }
+        
+        /* Hero Section */
+        .page-hero { 
+            background: #1a2a4a; 
+            color: white; 
+            padding: 120px 40px 60px; 
+            text-align: center; 
+            margin-top: 70px; 
+        }
+        
+        .page-hero h1 { 
+            font-size: 42px; 
+            font-weight: 700; 
+            margin-bottom: 16px; 
+        }
+        
+        .page-hero p { 
+            font-size: 18px; 
+            color: #ddd; 
+            max-width: 700px; 
+            margin: 0 auto; 
+        }
+        
+        /* Page Content */
+        .page-content { 
+            max-width: 1200px; 
+            margin: 0 auto; 
+            padding: 60px 40px; 
+        }
+        
+        .page-content h2 { 
+            font-size: 28px; 
+            color: #1a1a1a; 
+            margin: 40px 0 16px; 
+        }
+        
+        .page-content p { 
+            color: #555; 
+            line-height: 1.8; 
+            margin-bottom: 16px; 
+        }
+        
+        /* Cities Grid */
+        .cities-grid { 
+            display: grid; 
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); 
+            gap: 24px; 
+            margin: 40px 0; 
+        }
+        
+        .city-card { 
+            background: white; 
+            border: 1px solid #e0e0e0; 
+            border-radius: 8px; 
+            padding: 28px; 
+            transition: all 0.3s; 
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        }
+        
+        .city-card:hover { 
+            box-shadow: 0 8px 20px rgba(0,0,0,0.12); 
+            transform: translateY(-4px);
+        }
+        
+        .city-card h3 { 
+            font-size: 20px; 
+            color: #1a1a1a; 
+            margin-bottom: 8px; 
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        
+        .city-card .drive-time { 
+            font-size: 13px; 
+            color: #E8751A; 
+            font-weight: 600; 
+            margin-bottom: 12px; 
+        }
+        
+        .city-card p { 
+            color: #666; 
+            margin-bottom: 16px; 
+            font-size: 14px; 
+        }
+        
+        .card-link { 
+            color: #E8751A; 
+            font-weight: 600; 
+            display: inline-block; 
+            transition: color 0.3s; 
+        }
+        
+        .card-link:hover { 
+            color: #d46515; 
+        }
+        
+        /* CTA Section */
+        .cta-section { 
+            background: #fff8f0; 
+            border: 2px solid #E8751A; 
+            border-radius: 8px; 
+            padding: 40px; 
+            text-align: center; 
+            margin: 60px 0; 
+        }
+        
+        .cta-section h2 { 
+            color: #1a1a1a; 
+            margin-bottom: 12px; 
+        }
+        
+        .cta-section p { 
+            color: #666; 
+            margin-bottom: 24px; 
+        }
+        
+        .cta-button { 
+            display: inline-block; 
+            background: #E8751A; 
+            color: white; 
+            padding: 14px 40px; 
+            border-radius: 4px; 
+            font-weight: 600; 
+            font-size: 16px; 
+            transition: background 0.3s; 
+        }
+        
+        .cta-button:hover { 
+            background: #d46515; 
+        }
+        
+        /* Footer */
+        footer { 
+            background: #1a1a1a; 
+            color: white; 
+            padding: 40px; 
+            text-align: center; 
+        }
+        
+        .footer-content { 
+            max-width: 1200px; 
+            margin: 0 auto; 
+            display: grid; 
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
+            gap: 30px; 
+            margin-bottom: 30px; 
+            text-align: left; 
+        }
+        
+        .footer-section h4 { 
+            margin-bottom: 15px; 
+        }
+        
+        .footer-section ul { 
+            list-style: none; 
+        }
+        
+        .footer-section ul li { 
+            margin-bottom: 8px; 
+        }
+        
+        .footer-section a { 
+            color: #ccc; 
+            transition: color 0.3s; 
+        }
+        
+        .footer-section a:hover { 
+            color: #E8751A; 
+        }
+        
+        .footer-bottom { 
+            border-top: 1px solid #333; 
+            padding-top: 20px; 
+            text-align: center; 
+            color: #999; 
+        }
+        
+        .social-links { 
+            display: flex; 
+            gap: 20px; 
+            justify-content: center; 
+            margin-bottom: 20px; 
+        }
+        
+        .social-icon { 
+            width: 35px; 
+            height: 35px; 
+            background: #333; 
+            border-radius: 50%; 
+            display: flex; 
+            align-items: center; 
+            justify-content: center; 
+            transition: background 0.3s; 
+        }
+        
+        .social-icon:hover { 
+            background: #E8751A; 
+        }
+        
+        .social-icon svg { 
+            width: 18px; 
+            height: 18px; 
+            fill: white; 
+        }
+        
+        /* Mobile */
+        @media (max-width: 768px) {
+            nav { padding: 0 20px; }
+            .nav-links { display: none; position: absolute; top: 70px; left: 0; right: 0; background: white; flex-direction: column; padding: 20px; gap: 15px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); }
+            .nav-links.active { display: flex; }
+            .hamburger { display: flex; }
+            .page-hero { padding: 100px 20px 40px; }
+            .page-hero h1 { font-size: 28px; }
+            .page-content { padding: 40px 20px; }
+            .cities-grid { grid-template-columns: 1fr; }
+            .footer-content { grid-template-columns: 1fr; }
+            .dropdown-content { position: static; box-shadow: none; padding: 0 0 0 20px; }
+            .dropdown-content a { padding: 6px 0; }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="/" class="logo">West Orange Embroidery</a>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="/#services">Services</a></li>
+            <li><a href="/#portfolio">Portfolio</a></li>
+            <li><a href="/#why-us">Why Us</a></li>
+            <li><a href="/#about">About</a></li>
+            <li class="dropdown">
+                <a href="/service-areas/">Service Areas</a>
+                <div class="dropdown-content">
+                    <a href="/service-areas/winter-garden.html">Winter Garden</a>
+                    <a href="/service-areas/orlando.html">Orlando</a>
+                    <a href="/service-areas/windermere.html">Windermere</a>
+                    <a href="/service-areas/ocoee.html">Ocoee</a>
+                    <a href="/service-areas/clermont.html">Clermont</a>
+                    <a href="/service-areas/apopka.html">Apopka</a>
+                    <a href="/service-areas/dr-phillips.html">Dr. Phillips</a>
+                    <a href="/service-areas/lake-nona.html">Lake Nona</a>
+                    <a href="/service-areas/kissimmee.html">Kissimmee</a>
+                    <a href="/service-areas/altamonte-springs.html">Altamonte Springs</a>
+                </div>
+            </li>
+            <li><a href="/#contact">Contact</a></li>
+        </ul>
+        <div class="hamburger" id="hamburger">
+            <span></span><span></span><span></span>
+        </div>
+    </nav>
+
+    <section class="page-hero">
+        <h1>Custom Embroidery Across Central Florida</h1>
+        <p>Find your local service area and discover how West Orange Embroidery serves businesses throughout the region.</p>
+    </section>
+
+    <div class="page-content">
+        <h2>We Serve These Central Florida Cities</h2>
+        <p>West Orange Embroidery provides professional embroidery services throughout Central Florida. Whether you're in our Winter Garden home base or up to 35 minutes away, we deliver quality, personalized service to your business.</p>
+        
+        <div class="cities-grid">
+            
+        <div class="city-card">
+            <h3>Winter Garden <span style="background: #E8751A; color: white; padding: 2px 8px; border-radius: 3px; font-size: 11px; font-weight: 700; margin-left: 8px;">HOME BASE</span></h3>
+            <p class="drive-time">Local away</p>
+            <p>Our home base and hub for Central Florida embroidery services.</p>
+            <a href="winter-garden.html" class="card-link">Learn More →</a>
+        </div>
+        <div class="city-card">
+            <h3>Orlando</h3>
+            <p class="drive-time">20 min away</p>
+            <p>Professional embroidery for Fortune 500 companies, conventions, and growing startups.</p>
+            <a href="orlando.html" class="card-link">Learn More →</a>
+        </div>
+        <div class="city-card">
+            <h3>Windermere</h3>
+            <p class="drive-time">10 min away</p>
+            <p>Luxury embroidery for Windermere's upscale boutiques, clubs, and fine businesses.</p>
+            <a href="windermere.html" class="card-link">Learn More →</a>
+        </div>
+        <div class="city-card">
+            <h3>Ocoee</h3>
+            <p class="drive-time">10 min away</p>
+            <p>Local neighbor embroidery shop with fast turnarounds and personal service.</p>
+            <a href="ocoee.html" class="card-link">Learn More →</a>
+        </div>
+        <div class="city-card">
+            <h3>Clermont</h3>
+            <p class="drive-time">20 min away</p>
+            <p>Supporting Clermont's fastest-growing business community with flexible embroidery solutions.</p>
+            <a href="clermont.html" class="card-link">Learn More →</a>
+        </div>
+        <div class="city-card">
+            <h3>Apopka</h3>
+            <p class="drive-time">20 min away</p>
+            <p>Durable workwear embroidery for manufacturing, agriculture, and trade industries.</p>
+            <a href="apopka.html" class="card-link">Learn More →</a>
+        </div>
+        <div class="city-card">
+            <h3>Dr. Phillips</h3>
+            <p class="drive-time">15 min away</p>
+            <p>Polished embroidery for Restaurant Row and professional medical services.</p>
+            <a href="dr-phillips.html" class="card-link">Learn More →</a>
+        </div>
+        <div class="city-card">
+            <h3>Lake Nona</h3>
+            <p class="drive-time">35 min away</p>
+            <p>Modern branding for Lake Nona's innovation corridor of tech and healthcare companies.</p>
+            <a href="lake-nona.html" class="card-link">Learn More →</a>
+        </div>
+        <div class="city-card">
+            <h3>Kissimmee</h3>
+            <p class="drive-time">30 min away</p>
+            <p>Durable embroidery for theme parks, hotels, and hospitality industry.</p>
+            <a href="kissimmee.html" class="card-link">Learn More →</a>
+        </div>
+        <div class="city-card">
+            <h3>Altamonte Springs</h3>
+            <p class="drive-time">25 min away</p>
+            <p>Reliable embroidery for I-4 corridor corporate offices and franchise operations.</p>
+            <a href="altamonte-springs.html" class="card-link">Learn More →</a>
+        </div>
+        </div>
+        
+        <div class="cta-section">
+            <h2>Don't See Your City?</h2>
+            <p>We serve beyond these primary areas. If your Central Florida business isn't listed, contact us for availability and service options.</p>
+            <a href="/#contact" class="cta-button">Get a Quote</a>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Services</h4>
+                <ul>
+                    <li><a href="/#services">Corporate Apparel</a></li>
+                    <li><a href="/#services">Custom Headwear</a></li>
+                    <li><a href="/#services">Outerwear</a></li>
+                    <li><a href="/#services">Logo Digitizing</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Company</h4>
+                <ul>
+                    <li><a href="/#about">About Us</a></li>
+                    <li><a href="/#portfolio">Portfolio</a></li>
+                    <li><a href="/#process">Process</a></li>
+                    <li><a href="/#faq">FAQ</a></li>
+                    <li><a href="/#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Service Areas</h4>
+                <ul>
+                    <li><a href="/service-areas/">View All</a></li>
+                    <li><a href="/service-areas/winter-garden.html">Winter Garden</a></li>
+                    <li><a href="/service-areas/orlando.html">Orlando</a></li>
+                    <li><a href="/service-areas/windermere.html">Windermere</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="social-links">
+                <a href="https://facebook.com/westorangeembroidery" target="_blank" class="social-icon" aria-label="Facebook">
+                    <svg viewBox="0 0 24 24">
+                        <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                    </svg>
+                </a>
+                <a href="https://instagram.com/westorangeembroidery" target="_blank" class="social-icon" aria-label="Instagram">
+                    <svg viewBox="0 0 24 24">
+                        <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                    </svg>
+                </a>
+            </div>
+            <p>&copy; 2026 West Orange Embroidery. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        const hamburger = document.getElementById('hamburger');
+        const navLinks = document.getElementById('navLinks');
+        hamburger.addEventListener('click', () => { navLinks.classList.toggle('active'); });
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => { navLinks.classList.remove('active'); });
+        });
+    </script>
+</body>
+</html>
