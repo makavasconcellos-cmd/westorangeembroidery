@@ -60,6 +60,40 @@
             color: #E8751A;
         }
 
+        /* Service Areas dropdown */
+        .dropdown {
+            position: relative;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background: white;
+            min-width: 220px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            border-radius: 4px;
+            padding: 10px 0;
+            z-index: 1001;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .dropdown-content a {
+            display: block;
+            padding: 8px 20px;
+            font-size: 13px;
+            color: #333;
+        }
+
+        .dropdown-content a:hover {
+            background: #f9f9f9;
+            color: #E8751A;
+        }
+
         .hamburger {
             display: none;
             flex-direction: column;
@@ -600,6 +634,17 @@
 
             .hamburger {
                 display: flex;
+            }
+
+            .dropdown-content {
+                position: static;
+                box-shadow: none;
+                padding: 5px 0 5px 20px;
+                min-width: auto;
+            }
+
+            .dropdown:hover .dropdown-content {
+                display: block;
             }
 
             .hero {
