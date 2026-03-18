@@ -4,10 +4,125 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>West Orange Embroidery - Custom Bulk Embroidery in Winter Garden, FL</title>
-    <link rel="icon" type="image/x-icon" href="favicon.ico">
-    <link rel="icon" type="image/png" sizes="512x512" href="favicon-512.png">
-    <link rel="apple-touch-icon" href="apple-touch-icon.png">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- LocalBusiness Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "West Orange Embroidery",
+      "url": "https://westorangeembroidery.com",
+      "logo": "https://westorangeembroidery.com/images/logo.png",
+      "description": "Custom bulk embroidery services in Winter Garden, FL. Specializing in corporate apparel, custom headwear, outerwear, and logo digitizing for businesses across Central Florida. 21-piece minimum.",
+      "email": "info@westorangeembroidery.com",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Winter Garden",
+        "addressRegion": "FL",
+        "addressCountry": "US"
+      },
+      "areaServed": [
+        "Winter Garden", "Orlando", "Kissimmee", "Apopka",
+        "Clermont", "Windermere", "Ocoee", "Lake Nona",
+        "Altamonte Springs", "Dr. Phillips"
+      ],
+      "serviceType": [
+        "Custom Bulk Embroidery",
+        "Corporate Apparel Embroidery",
+        "Logo Digitizing",
+        "Custom Headwear",
+        "Embroidered Outerwear"
+      ],
+      "sameAs": [
+        "https://www.facebook.com/westorangeembroidery",
+        "https://www.instagram.com/westorangeembroidery",
+        "https://www.yelp.com/biz/west-orange-embroidery"
+      ]
+    }
+    </script>
+
+    <!-- FAQPage Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Do you provide the apparel, or just the embroidery?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We can do either. Bring your own apparel (BYOG - Bring Your Own Garments) or we can source it for you. If we're sourcing, we'll provide options and pricing in your quote."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What's your minimum order quantity?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Our minimum order is 21 pieces per design. This keeps our pricing competitive while making bulk embroidery accessible for small to mid-sized teams and businesses across Central Florida."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What file formats do you accept for logos?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Vector files work best (.AI, .EPS, .PDF, .SVG). We can also work with high-resolution .PNG or .JPG files. If you only have a low-res image or business card, we'll let you know if it's usable or if we need to redraw it."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you digitize logos, or do I need to provide embroidery files?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We handle all digitizing in-house. Send us your logo and we'll convert it into an embroidery-ready file. A one-time digitizing/setup fee applies per design."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What's your typical turnaround time?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Most orders ship within 5-7 business days from artwork approval. Rush orders are available depending on our schedule — just ask."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can you match specific brand colors (PMS/Pantone)?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. We'll get as close as possible using our thread library. Keep in mind embroidery thread won't be a perfect match to printed ink, but we'll show you thread samples for approval before production."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you offer design services or create logos?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. We're a production partner, not a design studio. Bring us your existing logo and branding, and we'll embroider it onto your apparel. If you need a logo designed, we can refer you to local designers."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What areas do you serve?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We're based in Winter Garden, FL and serve businesses throughout Central Florida — including Orlando, Ocoee, Windermere, Clermont, and surrounding areas. Shipping available for orders outside our local area."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I get a quote?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Fill out the quote form on our website, or email us at info@westorangeembroidery.com with details about your project (quantity, apparel type, and logo). We'll get back to you within 1 business day."
+          }
+        }
+      ]
+    }
+    </script>
     <style>
         * {
             margin: 0;
@@ -60,40 +175,6 @@
         }
 
         .nav-links a:hover {
-            color: #E8751A;
-        }
-
-        /* Service Areas dropdown */
-        .dropdown {
-            position: relative;
-        }
-
-        .dropdown-content {
-            display: none;
-            position: absolute;
-            top: 100%;
-            left: 0;
-            background: white;
-            min-width: 220px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-            border-radius: 4px;
-            padding: 10px 0;
-            z-index: 1001;
-        }
-
-        .dropdown:hover .dropdown-content {
-            display: block;
-        }
-
-        .dropdown-content a {
-            display: block;
-            padding: 8px 20px;
-            font-size: 13px;
-            color: #333;
-        }
-
-        .dropdown-content a:hover {
-            background: #f9f9f9;
             color: #E8751A;
         }
 
@@ -639,13 +720,6 @@
                 display: flex;
             }
 
-            .dropdown-content {
-                position: static;
-                box-shadow: none;
-                padding: 5px 0 5px 20px;
-                min-width: auto;
-            }
-
             .hero {
                 padding: 120px 20px 80px;
             }
@@ -749,21 +823,6 @@
             <li><a href="#about">About</a></li>
             <li><a href="#process">Process</a></li>
             <li><a href="#faq">FAQ</a></li>
-            <li class="dropdown">
-                <a href="service-areas/">Service Areas</a>
-                <div class="dropdown-content">
-                    <a href="service-areas/winter-garden.html">Winter Garden</a>
-                    <a href="service-areas/orlando.html">Orlando</a>
-                    <a href="service-areas/windermere.html">Windermere</a>
-                    <a href="service-areas/ocoee.html">Ocoee</a>
-                    <a href="service-areas/clermont.html">Clermont</a>
-                    <a href="service-areas/apopka.html">Apopka</a>
-                    <a href="service-areas/dr-phillips.html">Dr. Phillips</a>
-                    <a href="service-areas/lake-nona.html">Lake Nona</a>
-                    <a href="service-areas/kissimmee.html">Kissimmee</a>
-                    <a href="service-areas/altamonte-springs.html">Altamonte Springs</a>
-                </div>
-            </li>
             <li><a href="#contact">Contact</a></li>
         </ul>
         <div class="hamburger" id="hamburger">
@@ -998,7 +1057,7 @@
                 <h2>Your Production Partner in Central Florida</h2>
                 <p>West Orange Embroidery is a family-run embroidery production shop serving businesses, teams, and organizations across Central Florida. We're not a design studio or an online embroidery mill — we're your local production partner.</p>
                 <p>Bring us your logo and branding, and we'll embroider it onto quality apparel in bulk. With professional equipment and years of experience, we handle everything from corporate apparel programs to team uniforms to promotional merchandise for events.</p>
-                <p>You work directly with us from quote to delivery — no call centers, no automated systems, just personal service from people who care about getting your order right. Fast turnaround, consistent quality, and a 20-piece minimum that makes bulk embroidery accessible without forcing you into massive minimums.</p>
+                <p>You work directly with us from quote to delivery — no call centers, no automated systems, just personal service from people who care about getting your order right. Fast turnaround, consistent quality, and a 21-piece minimum that makes bulk embroidery accessible without forcing you into massive minimums.</p>
                 <p>Local to Winter Garden. Serving businesses across West Orange County, Orlando, and Central Florida.</p>
             </div>
         </div>
@@ -1042,7 +1101,7 @@
 
             <div class="faq-item">
                 <div class="faq-question">What's your minimum order quantity?</div>
-                <div class="faq-answer">20 pieces per design. This keeps our pricing competitive while making bulk embroidery accessible for small to mid-sized teams and businesses.</div>
+                <div class="faq-answer">21 pieces per design. This keeps our pricing competitive while making bulk embroidery accessible for small to mid-sized teams and businesses.</div>
             </div>
 
             <div class="faq-item">
@@ -1057,7 +1116,7 @@
 
             <div class="faq-item">
                 <div class="faq-question">What's your typical turnaround time?</div>
-                <div class="faq-answer">Most orders: 7-10 business days from artwork approval. Rush orders available depending on our schedule — just ask.</div>
+                <div class="faq-answer">Most orders: 5-7 business days from artwork approval. Rush orders available depending on our schedule — just ask.</div>
             </div>
 
             <div class="faq-item">
@@ -1077,7 +1136,7 @@
 
             <div class="faq-item">
                 <div class="faq-question">How do I get a quote?</div>
-                <div class="faq-answer">Fill out our quote form on the Contact section, or email us at info@westorangeembroidery.com with details about your project (quantity, apparel type, and logo). We'll get back to you within 1 business day.</div>
+                <div class="faq-answer">Fill out our quote form on the Contact section, or email us at <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="d2bbbcb4bd92a5b7a1a6bda0b3bcb5b7b7bfb0a0bdbbb6b7a0abfcb1bdbf">[email&#160;protected]</a> with details about your project (quantity, apparel type, and logo). We'll get back to you within 1 business day.</div>
             </div>
         </div>
     </section>
@@ -1096,7 +1155,7 @@
                     </div>
                     <div class="contact-details">
                         <h3>Email</h3>
-                        <p><a href="mailto:info@westorangeembroidery.com">info@westorangeembroidery.com</a></p>
+                        <p><a href="/cdn-cgi/l/email-protection#4b22252d240b3c2e383f24392a252c2e2e26293924222f2e393265282426"><span class="__cf_email__" data-cfemail="f29b9c949db2859781869d80939c9597979f90809d9b9697808bdc919d9f">[email&#160;protected]</span></a></p>
                     </div>
                 </div>
                 <div class="contact-item">
@@ -1109,17 +1168,6 @@
                         <h3>Location</h3>
                         <p>Winter Garden, FL</p>
                     </div>
-                    <div class="contact-item">
-                        <div class="contact-icon">
-                            <svg viewBox="0 0 24 24">
-                                <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
-                            </svg>
-                        </div>
-                        <div class="contact-details">
-                            <h3>Phone</h3>
-                            <p><a href="tel:4078372823">(407) 837-2823</a></p>
-                        </div>
-                    </div>
                 </div>
                 <div class="contact-item">
                     <div class="contact-icon">
@@ -1129,7 +1177,7 @@
                     </div>
                     <div class="contact-details">
                         <h3>Minimum Order</h3>
-                        <p>20 pieces</p>
+                        <p>21 pieces</p>
                     </div>
                 </div>
             </div>
@@ -1160,7 +1208,7 @@
 
                 <div class="form-group">
                     <label for="quantity">Quantity Needed *</label>
-                    <input type="number" id="quantity" name="quantity" min="20" required>
+                    <input type="number" id="quantity" name="quantity" min="21" required>
                 </div>
 
                 <div class="form-group">
@@ -1210,30 +1258,15 @@
                     <li><a href="#portfolio">Portfolio</a></li>
                     <li><a href="#process">Process</a></li>
                     <li><a href="#faq">FAQ</a></li>
-                    <li class="dropdown">
-                <a href="service-areas/">Service Areas</a>
-                <div class="dropdown-content">
-                    <a href="service-areas/winter-garden.html">Winter Garden</a>
-                    <a href="service-areas/orlando.html">Orlando</a>
-                    <a href="service-areas/windermere.html">Windermere</a>
-                    <a href="service-areas/ocoee.html">Ocoee</a>
-                    <a href="service-areas/clermont.html">Clermont</a>
-                    <a href="service-areas/apopka.html">Apopka</a>
-                    <a href="service-areas/dr-phillips.html">Dr. Phillips</a>
-                    <a href="service-areas/lake-nona.html">Lake Nona</a>
-                    <a href="service-areas/kissimmee.html">Kissimmee</a>
-                    <a href="service-areas/altamonte-springs.html">Altamonte Springs</a>
-                </div>
-            </li>
-            <li><a href="#contact">Contact</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </div>
             <div class="footer-section">
                 <h4>Location</h4>
                 <ul>
                     <li>Winter Garden, FL</li>
-                    <li><a href="mailto:info@westorangeembroidery.com">info@westorangeembroidery.com</a></li>
-                    <li>20+ Piece Minimum</li>
+                    <li><a href="/cdn-cgi/l/email-protection#d7beb9b1b897a0b2a4a3b8a5b6b9b0b2b2bab5a5b8beb3b2a5aef9b4b8ba"><span class="__cf_email__" data-cfemail="f0999e969fb0879583849f82919e9795959d92829f9994958289de939f9d">[email&#160;protected]</span></a></li>
+                    <li>21+ Piece Minimum</li>
                 </ul>
             </div>
         </div>
@@ -1250,11 +1283,11 @@
                     </svg>
                 </a>
             </div>
-            <p>&copy; 2026 West Orange Embroidery. All rights reserved.</p>
+            <p>&copy; 2025 West Orange Embroidery. All rights reserved.</p>
         </div>
     </footer>
 
-    <script>
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
         // Mobile menu toggle
         const hamburger = document.getElementById('hamburger');
         const navLinks = document.getElementById('navLinks');
@@ -1267,22 +1300,4 @@
         document.querySelectorAll('.nav-links a').forEach(link => {
             link.addEventListener('click', () => {
                 navLinks.classList.remove('active');
-            });
-        });
-
-        // Smooth scrolling
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function(e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    target.scrollIntoView({
-                        behavior: 'smooth',
-                        block: 'start'
-                    });
-                }
-            });
-        });
-    </script>
-</body>
-</html>
+           
