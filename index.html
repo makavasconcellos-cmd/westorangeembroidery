@@ -595,6 +595,12 @@
             box-shadow: 0 0 0 3px rgba(232, 117, 26, 0.1);
         }
 
+        .form-hint {
+            font-size: 13px;
+            color: #999;
+            margin-top: 6px;
+        }
+
         .submit-button {
             background: #E8751A;
             color: white;
@@ -1258,6 +1264,7 @@
             <form action="https://formsubmit.co/info@westorangeembroidery.com" method="POST" enctype="multipart/form-data">
                 <input type="hidden" name="_captcha" value="false">
                 <input type="hidden" name="_subject" value="New Quote Request from Website">
+                <input type="hidden" name="_next" value="https://westorangeembroidery.com/?submitted=true#contact">
 
                 <div class="form-group">
                     <label for="name">Your Name *</label>
@@ -1303,8 +1310,9 @@
                 </div>
 
                 <div class="form-group">
-                    <label for="logo">Upload Your Logo (JPG, PNG, PDF)</label>
-                    <input type="file" id="logo" name="logo" accept=".jpg,.jpeg,.png,.pdf">
+                    <label for="attachments">Upload Logo / Reference Images (JPG, PNG, PDF)</label>
+                    <input type="file" id="attachments" name="attachments" accept=".jpg,.jpeg,.png,.pdf" multiple>
+                    <p class="form-hint">You can attach multiple files. Max 10MB total.</p>
                 </div>
 
                 <button type="submit" class="submit-button" id="submitBtn">Get Quote</button>
@@ -1434,12 +1442,35 @@
             viewMoreBtn.textContent = expanded ? 'Show Less' : 'View More Work';
         });
 
-        // Quote form — AJAX submission with inline feedback
+        // Quote form — submission handling
+        // IMPORTANT: FormSubmit's AJAX endpoint does NOT support file attachments.
+        // When files are attached we fall back to a traditional form POST so the
+        // files actually get delivered with the email.
         const quoteForm = document.querySelector('#contact form');
         const submitBtn = document.getElementById('submitBtn');
         const formStatus = document.getElementById('form-status');
+        const attachmentsInput = document.getElementById('attachments');
+
+        // If user was just redirected back after a file-upload submission, show success.
+        if (new URLSearchParams(window.location.search).get('submitted') === 'true') {
+            formStatus.textContent = "Thanks! We'll review your request and get back to you within 1 business day.";
+            formStatus.className = 'form-status success';
+            // Clean up the URL so refresh doesn't re-show the message
+            history.replaceState(null, '', window.location.pathname + '#contact');
+        }
 
         quoteForm.addEventListener('submit', async function(e) {
+            const hasFiles = attachmentsInput && attachmentsInput.files && attachmentsInput.files.length > 0;
+
+            // When files are attached, let the browser submit the form traditionally.
+            // FormSubmit will process attachments and redirect back via _next.
+            if (hasFiles) {
+                submitBtn.textContent = 'Sending…';
+                submitBtn.disabled = true;
+                return; // do NOT preventDefault — allow native submission
+            }
+
+            // No files: use AJAX for nicer inline UX.
             e.preventDefault();
             submitBtn.textContent = 'Sending…';
             submitBtn.disabled = true;
