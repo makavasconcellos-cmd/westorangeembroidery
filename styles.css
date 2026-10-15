@@ -235,6 +235,8 @@ a.card.solid:hover .more{color:var(--orange)}
 /* logo lockup is one line shorter than WOBC's, so it's set shorter to keep the WO the same size */
 .brand img{height:61px}
 @media (max-width:520px){.brand img{height:48px}}
+/* on phones "Service areas" shortens to "Areas" so the header stays on one row */
+@media (max-width:520px){.nav-long{display:none}}
 
 /* photo gallery */
 .gallery{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:28px 20px;margin-top:44px}
